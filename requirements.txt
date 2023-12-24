@@ -1,0 +1,7 @@
+yarl~=1.7.2
+datetime 
+cfscrape 
+socks 
+pysocks 
+colorama 
+cloudscraper
