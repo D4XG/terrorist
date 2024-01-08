@@ -1,18 +1,18 @@
 import requests
 import os
-import subprocess
 import random
 import re
 import threading
 import urllib.request
 import argparse
 import sys
-from colorama import Fore, Back, Style, init
+from colorama import Fore, init
+from concurrent.futures import ThreadPoolExecutor
 from time import time
 
 init(autoreset=True)
 
-output_file = 'proxy.txt'
+output_file = 'newprx.txt'
 os.system('cls' if os.name == 'nt' else 'clear')
 
 if os.path.isfile(output_file):
@@ -47,19 +47,6 @@ proxy_urls = [
 'https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all',
 ]
 
-def download_and_save_proxies(url, output_file):
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            with open(output_file, 'a') as file:
-                file.write(response.text)
-                print(f"{Fore.GREEN}Successfully Collecting Proxy ({Fore.RED}Scraper By Xequille n Tanaka{Fore.GREEN})")
-        else:
-            print(f"{Fore.RED}Gagal {url}{Fore.RESET}")
-    except Exception as e:
-        print(f"{Fore.RED}Gagal {url}{Fore.RESET}")
-
-open(output_file, 'w').close()
 
 class Proxy:
     def __init__(self, method, proxy):
@@ -89,10 +76,30 @@ class Proxy:
 
     def __str__(self):
         return self.proxy
+    
+def download_and_save_proxies(url, output_file):
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            with open(output_file, 'a') as file:
+                file.write(response.text)
+                print(f"{Fore.GREEN}Successfully Collecting Proxy ({Fore.RED}D4XG Scraper{Fore.GREEN})")
+        else:
+            print(f"{Fore.RED}Gagal {url}{Fore.RESET}")
+    except Exception as e:
+        print(f"{Fore.RED}Gagal {url}{Fore.RESET}")
 
-def verbose_print(verbose, message):
-    if verbose:
-        print(message)
+def check_proxy(proxy, user_agent, site, timeout, verbose):
+    new_user_agent = user_agent
+    if args.random_agent:
+        new_user_agent = random.choice(user_agents)
+    valid, time_taken, error = proxy.check(site, timeout, new_user_agent)
+    message = {
+        True: f"{proxy} is valid, took {time_taken} seconds",
+        False: f"{proxy} is invalid: {repr(error)}",
+    }[valid]
+    verbose_print(verbose, message)
+    return [proxy] if valid else []
 
 def check(file, timeout, method, site, verbose, random_user_agent):
     proxies = []
@@ -102,31 +109,18 @@ def check(file, timeout, method, site, verbose, random_user_agent):
 
     print(f"{Fore.GREEN}Checking {Fore.YELLOW}{len(proxies)} {Fore.GREEN}Proxy")
     proxies = filter(lambda x: x.is_valid(), proxies)
+
     valid_proxies = []
     user_agent = random.choice(user_agents)
 
-    def check_proxy(proxy, user_agent):
-        new_user_agent = user_agent
-        if random_user_agent:
-            new_user_agent = random.choice(user_agents)
-        valid, time_taken, error = proxy.check(site, timeout, new_user_agent)
-        message = {
-            True: f"{proxy} is valid, took {time_taken} seconds",
-            False: f"{proxy} is invalid: {repr(error)}",
-        }[valid]
-        verbose_print(verbose, message)
-        valid_proxies.extend([proxy] if valid else [])
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        results = executor.map(
+            lambda proxy: check_proxy(proxy, user_agent, site, timeout, verbose),
+            proxies
+        )
 
-    threads = []
-    for proxy in proxies:
-        t = threading.Thread(target=check_proxy, args=(proxy, user_agent))
-        threads.append(t)
-
-    for t in threads:
-        t.start()
-
-    for t in threads:
-        t.join()
+        for result_list in results:
+            valid_proxies.extend(result_list)
 
     with open(file, "w") as f:
         for proxy in valid_proxies:
@@ -142,7 +136,7 @@ def verbose_print(verbose, message):
 for url in proxy_urls:
     download_and_save_proxies(url, output_file)
     
-with open('proxy.txt', 'r') as ceki:
+with open('newprx.txt', 'r') as ceki:
     jumlh = sum(1 for line in ceki)
     
 print(f"\nCongralutions You Got {Fore.WHITE}( {Fore.YELLOW}{jumlh} {Fore.WHITE}) Do u want check it ? {Fore.WHITE}({Fore.GREEN}Y{Fore.WHITE}/{Fore.RED}N{Fore.WHITE}): ", end="")
@@ -157,15 +151,28 @@ if choice == 'y' or choice == 'Y':
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15",
     ]
     
-    parser = argparse.ArgumentParser()
+    if __name__ == "__main__":
+      parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--timeout", type=int, default=20, help="Dismiss the proxy after -t seconds")
     parser.add_argument("-p", "--proxy", default="http", help="Check HTTPS or HTTP proxies")
-    parser.add_argument("-s", "--site", default="https://google.com/", help="Check with specific website like google.com")
+    parser.add_argument("-s", "--site", default="https://google.com/", help="Check with a specific website like google.com")
     parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
     parser.add_argument("-r", "--random_agent", action="store_true", help="Use a random user agent per proxy")
     
+    args = None  # Define args outside the if block
+
+if choice == 'y':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-t", "--timeout", type=int, default=20, help="Dismiss the proxy after -t seconds")
+    parser.add_argument("-p", "--proxy", default="http", help="Check HTTPS or HTTP proxies")
+    parser.add_argument("-s", "--site", default="https://google.com/", help="Check with a specific website like google.com")
+    parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
+    parser.add_argument("-r", "--random_agent", action="store_true", help="Use a random user agent per proxy")
+
     args = parser.parse_args()
+
+if args is not None:  # Check if args is defined
     check(file=output_file, timeout=args.timeout, method=args.proxy, site=args.site, verbose=args.verbose, random_user_agent=args.random_agent)
-    sys.exit(0)
 else:
-    print(f"{Fore.YELLOW}Terima Kasih, Telah Menggunakan Script Saya!.\n")
+    print(f"{Fore.YELLOW}D4XG PRXY SCRAPER.\n")
+    check(file=output_file, timeout=args.timeout, method=args.proxy, site=args.site, verbose=args.verbose, random_user_agent=args.random_agent)

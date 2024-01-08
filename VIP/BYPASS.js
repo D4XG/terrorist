@@ -14,7 +14,13 @@ const net = require("net");
 
  if (process.argv.length < 7){
 	 console.log(`
-  Usage: node TLSV2.js [TARGET] [TIME] [REQUEST] [THREAD] [PROXY FILE]`); 
+	    ███████╗██╗  ██╗██╗   ██╗███╗   ██╗███████╗████████╗
+            ██╔════╝██║ ██╔╝╚██╗ ██╔╝████╗  ██║██╔════╝╚══██╔══╝
+            ███████╗█████╔╝  ╚████╔╝ ██╔██╗ ██║█████╗     ██║  
+            ╚════██║██╔═██╗   ╚██╔╝  ██║╚██╗██║██╔══╝     ██║   
+            ███████║██║  ██╗   ██║   ██║ ╚████║███████╗   ██║   
+            ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝╚══════╝   ╚═╝
+  Usage: node SKYNET-TLS.js [TARGET] [TIME] [REQUEST] [THREAD] [PROXY FILE]`); 
 	 process.exit();}
  const headers = {};
   function readLines(filePath) {

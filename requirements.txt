@@ -5,3 +5,4 @@ socks
 pysocks 
 colorama 
 cloudscraper
+pystyle

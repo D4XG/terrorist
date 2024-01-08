@@ -1,0 +1,13 @@
+EXE with ICON Turorial by D4XG | facebook.com/d4xgg
+tạo ảnh png icon sau đó convert sang đuôi .ico
+sau khi convert xong nhập lệnh sau trong thư mục src, tool
+
+
+pip install pyinstaller
+pyinstaller --onefile --add-data "D:\DDOS\VIP\src-ddos;." --icon=D:\DDOS\VIP\src-ddos\TERRORIST.ico main.py
+                                  Cnay là thư mục file                  trên này là icon            đây là file main để chạy
+                                  ddos                                                              thay đổi tên theo tên tool
+
+
+Đợi tầm 4p vô thư mục dist vừa được tạo sẽ có file .exe , ae chỉ cần thay tên thì mang đi đâu cũng sài được hết
+EzGGs.
