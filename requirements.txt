@@ -6,3 +6,5 @@ pysocks
 colorama 
 cloudscraper
 pystyle
+requests
+colorama

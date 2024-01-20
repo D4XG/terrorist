@@ -17,6 +17,7 @@
     "http2": "^3.3.7",
     "minimist": "^1.2.8",
     "net": "^1.0.2",
+    "playwright": "^1.41.0",
     "playwright-extra": "^4.3.6",
     "puppeteer-extra-plugin-recaptcha": "^3.6.8",
     "random-useragent": "^0.5.0",
@@ -28,7 +29,8 @@
     "tls": "^0.0.1",
     "ua-parser-js": "^1.0.36",
     "url": "^0.11.3",
-    "user-agents": "^1.0.1444",
+    "user-agent": "^1.0.4",
+    "user-agents": "^1.1.88",
     "zombie": "^6.1.4"
   }
 }
