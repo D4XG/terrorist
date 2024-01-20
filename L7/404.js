@@ -288,6 +288,6 @@ const net = require("net");
      }),function (error, response, body) {
 		};
  }
- console.log(gradient.vice(`[!] SUCCESSFULLY SENT ATTACK.`));
+ console.log((`\x1b[38;5;160m[\x1b[38;5;255m!\x1b[38;5;160m] \x1b[38;5;255mSUCCESSFULLY SENT ATTACK.`));
  const KillScript = () => process.exit(1);
  setTimeout(KillScript, args.time * 1000);

