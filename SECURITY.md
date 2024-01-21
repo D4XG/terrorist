@@ -1,3 +1,4 @@
+<h1 align="center">TERRORIST - Privacy</h1>
 # Security Policy
 
 ## How to protect yourself when performing a DDOS Attack
@@ -97,9 +98,9 @@ RK63X18W-tny8539z-79LNG8B0
 81i5qI4R-f3vu5V94-X9w671Im 
 63sim2w4-aKM3915R-9y426xQE
 
-[ t.me/daxgspace ] | [@xDAXG](https://t.me/xDAXG)
+[ t.me/daxgspace ] | @xDAXG
 ```
-Or using DeepSecret / Onion browser
+Or using Hide IP Browser
 # Using clean **Proxies**
  - CLean & Fast proxies give you best requests when attacking
 <hr>
