@@ -1,5 +1,5 @@
 <h1 align="center">TERRORIST - Private DDOS Panel</h1>
-<em><h5 align="center">(Programming Language - Python 3)</h5></em>
+<h5 align="center">(Programming Language - Python/Nodejs/Go/C)</h5>
 
                                   ;:::::;
                                 ;::::;  :;                        ________________________________
