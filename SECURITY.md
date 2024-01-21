@@ -1,21 +1,17 @@
 # Security Policy
 
-## Supported Versions
+## How to protect yourself when performing a DDOS Attack
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Use those browser below and entering Ignonito
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+|   Browser   | DDOS Supported     |
+|   -------   | ------------------ |
+|   Firefox   | :white_check_mark: |
+|   Onion     | :white_check_mark: |
+|   Brave     | :white_check_mark: |
+|   Chrome    | :x:                |
 
-## Reporting a Vulnerability
+## When DDOSing
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Hide your IP/DNS by using 1.1.1.1 Warp+
+ - Get free WARP+ | Join my Telegram
