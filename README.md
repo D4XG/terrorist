@@ -31,3 +31,13 @@
 
 # 📖 Setup
 
+Setup Error visit our [Discord](https://dsc.gg/daxg)
+
+**Clone and Install Script**
+
+```shell script
+git clone https://github.com/D4XG/Attack-Private.git
+cd Attack-Private
+pip install -r requirements.txt
+```
+
