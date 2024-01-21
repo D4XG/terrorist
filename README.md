@@ -22,12 +22,12 @@
 # 📰 Terrorist Infomation
 <img align="right" width=210px alt="PNG" src="https://i.pinimg.com/originals/a0/10/21/a010215b786ada4176ae237b5b154310.gif" />
 
--   ⚡ Tool have L4/L7/AA Methods
+-   ⚡ Tool has L4/L7/AA: [ 20 ] Methods
 -   🌟 SpamSMS included
 -   🗓️ Date created: 2024
--   🍁 Profile: **[Facebook](https://www.facebook.com/d4xgg), [Tiktok](https://tiktok.com/@k1euduy4nh)**
--   🍀 Describe yourself: **I love coding, it make me feel like i'm living. I also loves playing video games ( steam, mobile , vr).**
+-   🔗 Support: **[Join now](https://t.me/daxgstress), [Discord](https://dsc.gg/daxg)**
+-   ⛏️ Environment: **Javascript, Python, Golang, Perl**
 <hr>
 
-# 📖 Top Langs
-# Node js, Python,..
+# 📖 Setup
+
