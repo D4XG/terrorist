@@ -43,6 +43,7 @@
 
 Setup Error visit our [Discord](https://dsc.gg/daxg)
 
+## ! Please read the 'license' and the 'privacy' tab before downloading
 **Clone and Install Script**
 
 ```shell script
