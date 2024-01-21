@@ -12,18 +12,18 @@ Use those browser below and entering anonymous tab
 |   Chrome    | :x:                |
 <hr>
 
-## When DDOSing
+# When DDOSing
 
-# Hide your IP/DNS by using 1.1.1.1 Warp+
+## Hide your IP/DNS by using 1.1.1.1 Warp+
  - Get free WARP+ | Join my [Telegram](https://t.me/daxgstress)
 Or using DeepSecret / Onion browser
 # Using clean **Proxies**
  - CLean & Fast proxies give you best requests when attacking
 <hr>
 
-## Using IDE/VPS
+# Using IDE/VPS
 
-# Using IDE or VPS help you increase requests (threads) and also hide your IP perfectly.
+## Using IDE or VPS help you increase requests (threads) and also hide your IP perfectly.
 
 
    
