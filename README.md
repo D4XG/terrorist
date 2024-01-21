@@ -1,3 +1,8 @@
+<p align="center"><img src="https://media.discordapp.net/attachments/1126029184871976970/1198627348115886241/reaper.png?ex=65bf97b5&is=65ad22b5&hm=ea4a34f566f34311e94c035282dfac339e7ace50d271f95c7ba3ff2c4d4ccc01&=&format=webp&quality=lossless&width=597&height=597" width="597px" height="597px" alt="terrorist"></p>
+
+<h1 align="center">TERRORIST - Private DDOS Panel</h1>
+<em><h5 align="center">(Programming Language - Python 3)</h5></em>
+
                                   ;:::::;
                                 ;::::;  :;                        ________________________________
                               ;:::::'    :;                     /\                               |
