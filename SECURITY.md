@@ -1,4 +1,5 @@
 <h1 align="center">TERRORIST - Privacy</h1>
+
 # Security Policy
 
 ## How to protect yourself when performing a DDOS Attack
