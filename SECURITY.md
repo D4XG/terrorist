@@ -556,9 +556,10 @@ Or using Hide IP Browser
 
 # Using IDE/VPS
 Here are some website you can ddos on it
- - **Github Codespace**   [FREEMIUM]
- - **Gitpod**             [FREEMIUM]
- - **AWS**                [  PAID  ]
+ - **Github Codespace**   FREEMIUM
+ - **Gitpod**             FREEMIUM
+ - **AWS**                  PAID  
+
 Using IDE or VPS help you increase requests (threads) and also hide your IP perfectly.
 
 
