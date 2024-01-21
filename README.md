@@ -28,6 +28,7 @@
 
 <img align="right" width=210px alt="PNG" src="https://media.discordapp.net/attachments/1126029184871976970/1198629189851553913/terrorist.png?ex=65bf996c&is=65ad246c&hm=c56518670b02b5dfaa7aa4cd870a86b498390b2b7513833bfd3a0c3a222808ec&=&format=png&width=500&height=597" />
 
+<hr>
 -   🗒️ | Tool has L4/L7/AA: [ 20 ] Methods
 -   🌟 | SpamSMS included
 -   👀 | Tools: IP Lookup
