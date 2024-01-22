@@ -20,15 +20,18 @@ Use those browser below and entering anonymous tab
  - Get free WARP+ | Join my [Telegram](https://t.me/daxgstress)
  - Or get the list below
 
-<details><summary>Keys</summary> <p/>
+<details><summary>🌐 EN-US</summary>
+  <h1> Warp+ Keys  </h1>
+
+<p>Cloudflare Warp+</p>
 ```
-Cloudflare Warp+ 
- 
+
+```
  Speed: Unlimited 
  Traffic: 2400 TB 
  For 5 Devices 
  Site: https://1.1.1.1 
- 
+
 Keys: 
 58ShH4T0-n16L09Jd-s8xE467K 
 iY8126Ag-9hv2g5e0-K0GjP754 
@@ -103,7 +106,7 @@ RK63X18W-tny8539z-79LNG8B0
 
 [ t.me/daxgspace ] | @xDAXG
 ```
-</details>
+
 </details>
 
 
@@ -112,6 +115,8 @@ Or using Hide IP Browser
  - CLean & Fast proxies give you best requests when attacking
  - Get free proxies blow ( proxies will die after multiple attack )
 <details><summary>Proxies</summary>
+  <h1> Free Proxies List  </h1> <p/>
+   
 ```
 101.255.118.89:8080
 103.105.228.35:8080
