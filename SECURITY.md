@@ -20,7 +20,7 @@ Use those browser below and entering anonymous tab
  - Get free WARP+ | Join my [Telegram](https://t.me/daxgstress)
  - Or get the list below
 
-<details><summary>Warp + Keys</summary>
+<details><summary>Warp+ Free Keys</summary>
  
 ```
 [ Cloudflare Warp+ ]
@@ -112,7 +112,6 @@ Or using Hide IP Browser
  - CLean & Fast proxies give you best requests when attacking
  - Get free proxies blow ( proxies will die after multiple attack )
 <details><summary>Proxies</summary>
-  <h1> Free Proxies List  </h1> <p/>
    
 ```
 101.255.118.89:8080
