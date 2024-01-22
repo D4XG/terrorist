@@ -19,6 +19,8 @@ Use those browser below and entering anonymous tab
 ## Hide your IP/DNS by using 1.1.1.1 Warp+
  - Get free WARP+ | Join my [Telegram](https://t.me/daxgstress)
  - Or get the list below
+
+<details><summary>Keys</summary> <p/>
 ```
 Cloudflare Warp+ 
  
@@ -101,10 +103,15 @@ RK63X18W-tny8539z-79LNG8B0
 
 [ t.me/daxgspace ] | @xDAXG
 ```
+</details>
+</details>
+
+
 Or using Hide IP Browser
 # Using clean **Proxies**
  - CLean & Fast proxies give you best requests when attacking
  - Get free proxies blow ( proxies will die after multiple attack )
+<details><summary>Proxies</summary>
 ```
 101.255.118.89:8080
 103.105.228.35:8080
@@ -553,6 +560,7 @@ Or using Hide IP Browser
 94.130.54.171:7498
 ```
 <hr>
+</details>
 
 # Using IDE/VPS
 Here are some website you can ddos on it
