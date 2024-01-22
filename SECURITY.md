@@ -20,7 +20,7 @@ Use those browser below and entering anonymous tab
  - Get free WARP+ | Join my [Telegram](https://t.me/daxgstress)
  - Or get the list below
 
-<details><summary>Warp + Keys/summary>
+<details><summary>Warp + Keys</summary>
  
 ```
 [ Cloudflare Warp+ ]
