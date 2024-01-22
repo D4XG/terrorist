@@ -20,11 +20,10 @@ Use those browser below and entering anonymous tab
  - Get free WARP+ | Join my [Telegram](https://t.me/daxgstress)
  - Or get the list below
 
-<details><summary>🌐 EN-US</summary>
+<details><summary>Warp + Keys/summary>
   <h1> Warp+ Keys  </h1>
 
 <p>Cloudflare Warp+</p>
-```
 
 ```
  Speed: Unlimited 
