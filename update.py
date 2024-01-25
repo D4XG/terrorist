@@ -24,7 +24,7 @@ def get_github_version():
     if response.status_code == 200:
         return response.json().get('version')
     else:
-        print(f"Failed to fetch the GitHub version. Status code: {response.status_code}")
+        print(f"\x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] \x1b[38;5;255m| \x1b[38;5;160mFailed to fetch the GitHub version. Status code: \x1b[38;5;255m{response.status_code}")
         return None
 
 def update_repository():
@@ -37,7 +37,7 @@ def update_repository():
 
         # Check if an update is needed
         if not local_version or version.parse(github_version) > version.parse(local_version):
-            print("Updating script...")
+            print("\x1b[38;5;160m[ \x1b[38;5;255m# \x1b[38;5;160m] | \x1b[38;5;255mUpdating script...")
 
             # Download the zip file of the repository
             download_url = 'https://github.com/D4XG/terrorist/archive/main.zip'
@@ -65,13 +65,13 @@ def update_repository():
                 # Update the local version file
                 update_local_version(github_version)
 
-                print("Script updated successfully.")
+                print("\x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] \x1b[38;5;255m| \x1b[38;5;255mScript updated successfully.")
             else:
-                print(f"Failed to download the update. Status code: {response.status_code}")
+                print(f"\x1b[38;5;160m[ \x1b[38;5;255m* \x1b[38;5;160m] \x1b[38;5;255m| Failed to download the update. Status code: \x1b[38;5;255m{response.status_code}")
         else:
-            print("Script is already up-to-date.")
+            print("\x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] \x1b[38;5;255m| \x1b[38;5;255mScript is already up-to-date.")
     else:
-        print("Failed to check for updates.")
+        print("\x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] \x1b[38;5;255m| \x1b[38;5;255mFailed to check for updates.")
 
 if __name__ == '__main__':
     update_repository()
