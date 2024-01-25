@@ -37,7 +37,7 @@ def update_repository():
 
         # Check if an update is needed
         if not local_version or version.parse(github_version) > version.parse(local_version):
-            print("\x1b[38;5;160m[ \x1b[38;5;255m# \x1b[38;5;160m] | \x1b[38;5;255mUpdating script...")
+            print("\x1b[38;5;160m[ \x1b[38;5;255m# \x1b[38;5;160m] \x1b[38;5;255m| \x1b[38;5;255mUpdating script...")
 
             # Download the zip file of the repository
             download_url = 'https://github.com/D4XG/terrorist/archive/main.zip'
