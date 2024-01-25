@@ -7,4 +7,7 @@ colorama
 cloudscraper
 pystyle
 requests
-colorama
+scapy
+cython
+darksky
+darkskylib
