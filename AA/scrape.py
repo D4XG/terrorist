@@ -19,6 +19,7 @@ if os.path.isfile(output_file):
     os.remove(output_file)
 
 proxy_urls = [
+'https://api.openproxylist.xyz/http.txt',
 'https://api.proxyscrape.com/v2/?request=displayproxies',
 'https://raw.githubusercontent.com/officialputuid/KangProxy/KangProxy/http/http.txt',
 'https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt',
@@ -83,7 +84,7 @@ def download_and_save_proxies(url, output_file):
         if response.status_code == 200:
             with open(output_file, 'a') as file:
                 file.write(response.text)
-                print(f"{Fore.GREEN}Successfully Collecting Proxy ({Fore.RED}D4XG Scraper{Fore.GREEN})")
+                print(f"\x1b[38;5;160mSuccessfully Collecting Proxy (\x1b[38;5;255mD4XG API\x1b[38;5;160m)")
         else:
             print(f"{Fore.RED}Gagal {url}{Fore.RESET}")
     except Exception as e:

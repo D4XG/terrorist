@@ -188,6 +188,8 @@ def tools():
                         ║                \033[33mTERRORIST TOOLS\x1b[38;5;160m                 ║
                         ║   \x1b[38;5;255mSPAMSMS\x1b[38;5;160m  |    Start a phone spam             ║
                         ║   \x1b[38;5;255mIP\x1b[38;5;160m       |    Lookup Domain/IP Infomation    ║
+                        ║   \x1b[38;5;255mSCRAPE\x1b[38;5;160m   |    Get Proxy Live                 ║
+                        ║   \x1b[38;5;255mCHECK\x1b[38;5;160m    |    Check for live proxy           ║
                         ╚════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -333,8 +335,10 @@ def main():
                         rules()
                 if sinput == "exit" or sinput == "EXIT" or sinput == "kill" or sinput == "KILL" or sinput == "shut" or sinput == "SHUT":
                         sys.exit()      
-                elif sinput == "scrape" or sinput == "SCRAPE":
-                        os.system(f'cd L7 && python3 scrape.py')
+                if sinput == "scrape" or sinput == "SCRAPE" or sinput == "getproxy" or sinput == "proxyget" or sinput == "g3tpr0xy" or sinput == "proxyscrape":
+                        os.system(f'cd AA && python3 scrape.py')
+                if sinput == "check" or sinput == "CHECK" or sinput == "checklive" or sinput == "proxycheck" or sinput == "checkproxy" or sinput == "livecheck":
+                        os.system(f'cd AA && python check.py')
                 elif sinput == "ip" or sinput == "IP":
                         try:
                                 query = sin.split()[1]  # Assuming the IP address is the second argument
@@ -538,7 +542,7 @@ def main():
                 else:
                         try:
                                 cmd=sin.split()[0]
-                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p"]
+                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p", "scrape", "checkproxy", "check"]
                                 
                                 if cmd not in excluded_keywords:
                                   print(" \x1b[38;5;160m[ ! ] Command : [ \x1b[38;5;255m"+cmd+" \x1b[38;5;160m] Not Found\n [ > ] Use '\x1b[38;5;255mhelp\x1b[38;5;160m' to see all commands.")

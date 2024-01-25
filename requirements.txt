@@ -11,3 +11,5 @@ scapy
 cython
 darksky
 darkskylib
+termcolor
+aiohttp_socks
