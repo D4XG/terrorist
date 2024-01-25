@@ -136,6 +136,7 @@ def menu():
                         RULES   ►  TERRORIST RULES
                         EXIT    ►  EXIT TOOL
                         CLEAR   ►  CLEAR TERMINAL
+                        UPDATE  ►  Update the Panel
 """)
 
 def layer7():
@@ -324,6 +325,8 @@ def main():
                         main()
                 if sinput == "help" or sinput == "HELP":
                         menu()
+                if sinput == "update" or sinput == "UPDATE":
+                        os.system(f'python update.py')
                 if sinput == "layer7" or sinput == "LAYER7" or sinput == "l7" or sinput == "L7":
                         layer7()
                 if sinput == "vip" or sinput == "VIP" or sinput == "V1P" or sinput == "v1p":
@@ -547,7 +550,7 @@ def main():
                 else:
                         try:
                                 cmd=sin.split()[0]
-                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p", "scrape", "checkproxy", "check"]
+                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p", "scrape", "checkproxy", "update", "UPDATE", "check"]
                                 
                                 if cmd not in excluded_keywords:
                                   print(" \x1b[38;5;160m[ ! ] Command : [ \x1b[38;5;255m"+cmd+" \x1b[38;5;160m] Not Found\n [ > ] Use '\x1b[38;5;255mhelp\x1b[38;5;160m' to see all commands.")
