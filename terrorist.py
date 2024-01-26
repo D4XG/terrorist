@@ -349,7 +349,7 @@ def main():
                         try:
                                 query = sin.split()[1]  # Assuming the IP address is the second argument
                                 get_ip_information(query)
-                        except IndexError:
+                        except (ValueError, IndexError):
                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mIP <ip/adress>")
                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mIP 8.8.8.8')
 #########LAYER-7########
@@ -554,7 +554,7 @@ def main():
                                 
                                 if cmd not in excluded_keywords:
                                   print(" \x1b[38;5;160m[ ! ] Command : [ \x1b[38;5;255m"+cmd+" \x1b[38;5;160m] Not Found\n [ > ] Use '\x1b[38;5;255mhelp\x1b[38;5;160m' to see all commands.")
-                        except IndexError:
+                        except (ValueError, IndexError):
                              pass             
     
 
