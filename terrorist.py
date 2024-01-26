@@ -123,20 +123,18 @@ def menu():
           \x1b[38;5;160m       ███    █▀      ██████████ █████▄▄██  ▄████▀           
           \x1b[38;5;160m                                 ▀                    
           \x1b[38;5;160m└─────────────────────────────────────────────────────────┘   
-          \x1b[38;5;160m          ║      DEVELOP BY DAXG | @daxg      ║    
-          \x1b[38;5;160m     ╔═════════════════════════════════════════════╗
-                          \x1b[38;5;255m[\033[0;33m#\x1b[38;5;255m] \x1b[38;5;160mHELP     \x1b[38;5;255m[\033[0;33m#\x1b[38;5;255m] \x1b[38;5;160mLAYER4   
-                          \x1b[38;5;255m[\033[0;33m#\x1b[38;5;255m] \x1b[38;5;160mEXIT     \x1b[38;5;255m[\033[0;33m#\x1b[38;5;255m] \x1b[38;5;160mLAYER7 
-                          \x1b[38;5;255m[\033[0;33m#\x1b[38;5;255m] \x1b[38;5;160mTOOLS    \x1b[38;5;255m[\033[0;33m#\x1b[38;5;255m] \x1b[38;5;160mRULES   
-               \x1b[38;5;160m╚═════════════════════════════════════════════╝
-                        HELP    ►  SHOW HELP MENU
-                        LAYER4  ►  SHOW LAYER4 METHODS
-                        LAYER7  ►  SHOW LAYER7 METHODS
-                        TOOLS   ►  SHOW TOOL BOX
-                        RULES   ►  TERRORIST RULES
-                        EXIT    ►  EXIT TOOL
-                        CLEAR   ►  CLEAR TERMINAL
-                        UPDATE  ►  Update the Panel
+          \x1b[38;5;160m          ║      DEVELOP BY DAXG | \x1b[38;5;255m@daxg\x1b[38;5;160m      ║    
+                \x1b[38;5;160m╔══════════════════════════════════════════╗
+                ║          ---- Methods List! ----         ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m layer4 \x1b[38;5;160m> Shows Layer 4 Methods!   ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m layer7 \x1b[38;5;160m> Shows Layer 7 Methods!   ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m rules  \x1b[38;5;160m> Panel Rules!             ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m admin  \x1b[38;5;160m> Contact                  ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m tools  \x1b[38;5;160m> Show Tools               ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m update \x1b[38;5;160m> Update Script/Panel      ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m clear  \x1b[38;5;160m> Clean the terminal       ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m exit   > Exit the panel           ║
+                ╚══════════════════════════════════════════╝
 """)
 
 def layer7():
