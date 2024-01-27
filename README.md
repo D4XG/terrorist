@@ -50,5 +50,11 @@ Setup Error visit our [Discord](https://dsc.gg/daxg)
 git clone https://github.com/D4XG/terrorist.git
 cd terrorist
 python setup.py
+python terrorist.py
+```
+Account / Password can be change in terrorist.py
+```shell script
+Account: DAXG
+Password: dsc.gg/daxg
 ```
 
