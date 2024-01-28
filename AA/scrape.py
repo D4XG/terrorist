@@ -12,7 +12,7 @@ from time import time
 
 init(autoreset=True)
 
-output_file = 'newprx.txt'
+output_file = 'needtocheck.txt'
 os.system('cls' if os.name == 'nt' else 'clear')
 
 if os.path.isfile(output_file):
@@ -140,40 +140,4 @@ for url in proxy_urls:
 with open('newprx.txt', 'r') as ceki:
     jumlh = sum(1 for line in ceki)
     
-print(f"\nCongralutions You Got {Fore.WHITE}( {Fore.YELLOW}{jumlh} {Fore.WHITE}) Do u want check it ? {Fore.WHITE}({Fore.GREEN}Y{Fore.WHITE}/{Fore.RED}N{Fore.WHITE}): ", end="")
-choice = input().strip().lower()
-
-if choice == 'y' or choice == 'Y':
-    user_agents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
-        "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15",
-    ]
-    
-    if __name__ == "__main__":
-      parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--timeout", type=int, default=20, help="Dismiss the proxy after -t seconds")
-    parser.add_argument("-p", "--proxy", default="http", help="Check HTTPS or HTTP proxies")
-    parser.add_argument("-s", "--site", default="https://google.com/", help="Check with a specific website like google.com")
-    parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
-    parser.add_argument("-r", "--random_agent", action="store_true", help="Use a random user agent per proxy")
-    
-    args = None  # Define args outside the if block
-
-if choice == 'y':
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--timeout", type=int, default=20, help="Dismiss the proxy after -t seconds")
-    parser.add_argument("-p", "--proxy", default="http", help="Check HTTPS or HTTP proxies")
-    parser.add_argument("-s", "--site", default="https://google.com/", help="Check with a specific website like google.com")
-    parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
-    parser.add_argument("-r", "--random_agent", action="store_true", help="Use a random user agent per proxy")
-
-    args = parser.parse_args()
-
-if args is not None:  # Check if args is defined
-    check(file=output_file, timeout=args.timeout, method=args.proxy, site=args.site, verbose=args.verbose, random_user_agent=args.random_agent)
-else:
-    print(f"{Fore.YELLOW}D4XG PRXY SCRAPER.\n")
-    check(file=output_file, timeout=args.timeout, method=args.proxy, site=args.site, verbose=args.verbose, random_user_agent=args.random_agent)
+print(f"✦ ━━━━━ ★ ━━━━━ ✦\n\x1b[38;5;160mCongralutions You Got ( \x1b[38;5;255m{jumlh} \x1b[38;5;160m) Proxies")
