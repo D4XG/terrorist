@@ -137,7 +137,7 @@ def verbose_print(verbose, message):
 for url in proxy_urls:
     download_and_save_proxies(url, output_file)
     
-with open('newprx.txt', 'r') as ceki:
+with open('needtocheck.txt', 'r') as ceki:
     jumlh = sum(1 for line in ceki)
     
 print(f"✦ ━━━━━ ★ ━━━━━ ✦\n\x1b[38;5;160mCongralutions You Got ( \x1b[38;5;255m{jumlh} \x1b[38;5;160m) Proxies")
