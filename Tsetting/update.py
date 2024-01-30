@@ -5,7 +5,7 @@ import shutil
 import zipfile
 from packaging import version
 
-VERSION_FILE_PATH = '[ - ] setting/version.json'
+VERSION_FILE_PATH = 'Tsetting/version.json'
 
 def get_local_version(file_path):
     try:
