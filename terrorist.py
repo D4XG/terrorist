@@ -410,7 +410,7 @@ def main():
                 if sinput == "help" or sinput == "HELP":
                         menu()
                 if sinput == "update" or sinput == "UPDATE":
-                        os.system(f'cd Tsetting && python update.py')
+                        os.system(f'python update.py')
                 if sinput == "layer7" or sinput == "LAYER7" or sinput == "l7" or sinput == "L7":
                         layer7()
                 if sinput == "vip" or sinput == "VIP" or sinput == "V1P" or sinput == "v1p":

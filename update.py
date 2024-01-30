@@ -5,23 +5,21 @@ import shutil
 import zipfile
 from packaging import version
 
-VERSION_FILE_PATH = 'Tsetting/version.json'
-
-def get_local_version(file_path):
+def get_local_version():
     try:
-        with open(file_path, 'r') as file:
+        with open('Tsetting/version.json', 'r') as file:
             data = json.load(file)
             return data.get('version')
     except FileNotFoundError:
         return None
 
-def update_local_version(new_version, file_path):
+def update_local_version(new_version):
     data = {'version': new_version}
-    with open(file_path, 'w') as file:
+    with open('T/setting/version.json', 'w') as file:
         json.dump(data, file, indent=2)
 
 def get_github_version():
-    response = requests.get('https://raw.githubusercontent.com/D4XG/terrorist/main/version.json')
+    response = requests.get('https://raw.githubusercontent.com/D4XG/terrorist/main/Tsetting/version.json')
 
     if response.status_code == 200:
         return response.json().get('version')
