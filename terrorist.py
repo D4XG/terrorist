@@ -96,7 +96,7 @@ def attack(screen):
     scenes = []
     effects = [
         Print(screen,
-              ColourImageFile(screen, "ASSETS/attack.gif", screen.height,
+              ColourImageFile(screen, "[ ? ] assets/attack.gif", screen.height,
                               uni=screen.unicode_aware),
               screen.height // -5),
     ]
@@ -112,7 +112,7 @@ def help(screen):
     scenes = []
     effects = [
         Print(screen,
-              ColourImageFile(screen, "ASSETS/help.gif", screen.height,
+              ColourImageFile(screen, "[ ? ] assets/help.gif", screen.height,
                               uni=screen.unicode_aware),
               screen.height//- 5,
               speed=1),
@@ -125,7 +125,7 @@ def methods(screen):
     scenes = []
     effects = [
         Print(screen,
-              ColourImageFile(screen, "ASSETS/methods.gif", screen.height,
+              ColourImageFile(screen, "[ ? ] assets/methods.gif", screen.height,
                               uni=screen.unicode_aware),
               screen.height//- 5,
               speed=1),
@@ -297,6 +297,8 @@ def vip():
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
+# BETA METHODS
+
 def hell():
         Screen.wrapper(methods)
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -408,7 +410,7 @@ def main():
                 if sinput == "help" or sinput == "HELP":
                         menu()
                 if sinput == "update" or sinput == "UPDATE":
-                        os.system(f'python update.py')
+                        os.system(f'cd [ - ] setting && python update.py')
                 if sinput == "layer7" or sinput == "LAYER7" or sinput == "l7" or sinput == "L7":
                         layer7()
                 if sinput == "vip" or sinput == "VIP" or sinput == "V1P" or sinput == "v1p":

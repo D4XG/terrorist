@@ -4,7 +4,7 @@ sau khi convert xong nhập lệnh sau trong thư mục src, tool
 
 
 pip install pyinstaller
-pyinstaller --onefile --add-data "D:\DDOS\VIP\src-ddos;." --icon=D:\DDOS\VIP\src-ddos\TERRORIST.ico main.py
+pyinstaller --onefile --add-data "src-ddos;." --icon=src-ddos\[ - ] setting\TERRORIST.ico terrorist.py
                                   Cnay là thư mục file                  trên này là icon            đây là file main để chạy
                                   ddos                                                              thay đổi tên theo tên tool
 

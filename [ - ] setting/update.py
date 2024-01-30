@@ -5,17 +5,19 @@ import shutil
 import zipfile
 from packaging import version
 
-def get_local_version():
+VERSION_FILE_PATH = '[ - ] setting/version.json'
+
+def get_local_version(file_path):
     try:
-        with open('version.json', 'r') as file:
+        with open(file_path, 'r') as file:
             data = json.load(file)
             return data.get('version')
     except FileNotFoundError:
         return None
 
-def update_local_version(new_version):
+def update_local_version(new_version, file_path):
     data = {'version': new_version}
-    with open('version.json', 'w') as file:
+    with open(file_path, 'w') as file:
         json.dump(data, file, indent=2)
 
 def get_github_version():
