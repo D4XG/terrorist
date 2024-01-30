@@ -7,7 +7,7 @@ from packaging import version
 
 def get_local_version():
     try:
-        with open('Tsetting/version.json', 'r') as file:
+        with open('version.json', 'r') as file:
             data = json.load(file)
             return data.get('version')
     except FileNotFoundError:
@@ -15,7 +15,7 @@ def get_local_version():
 
 def update_local_version(new_version):
     data = {'version': new_version}
-    with open('Tsetting/version.json', 'w') as file:
+    with open('version.json', 'w') as file:
         json.dump(data, file, indent=2)
 
 def get_github_version():
