@@ -10,6 +10,8 @@ def install_python_packages():
 
         subprocess.check_call(['pip', 'install', 'datetime'])
 
+        subprocess.check_call(['pip', 'install', 'asciimatics'])
+
         subprocess.check_call(['pip', 'install', 'opencv-python'])
 
         subprocess.check_call(['pip', 'install', 'cfscrape'])

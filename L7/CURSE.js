@@ -44,7 +44,8 @@ const getCurrentTime = () => {
  Promise.race([axiosPromise, timeoutPromise])
    .then((response) => {
      const { status, data } = response;
-     console.log(`\x1b[38;5;255m[\x1b[38;5;160m35mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${getTitleFromHTML(data)} \x1b[38;5;255m(\x1b[32m${status}\x1b[38;5;255m)`);
+     console.clear()
+     console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${getTitleFromHTML(data)} \x1b[38;5;255m(\x1b[32m${status}\x1b[38;5;255m)`);
    })
    .catch((error) => {
      if (error.message === 'Request timed out') {
