@@ -15,7 +15,7 @@ def get_local_version():
 
 def update_local_version(new_version):
     data = {'version': new_version}
-    with open('T/setting/version.json', 'w') as file:
+    with open('Tsetting/version.json', 'w') as file:
         json.dump(data, file, indent=2)
 
 def get_github_version():
