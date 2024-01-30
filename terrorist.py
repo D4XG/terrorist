@@ -155,7 +155,7 @@ def layer7():
                \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
                     ════╦════════════════════════════════════════════════╦════
                         ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
-                        ║      \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHOD\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
+                        ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
                     ║       ●  CHAOS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  DNK     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║ 
                     ║       ●  SPIKE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  CURSE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
@@ -211,7 +211,7 @@ def layer4():
                \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
                     ════╦════════════════════════════════════════════════╦════
                         ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
-                        ║      \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHOD\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
+                        ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
                     ║       ●  HOME   [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  STRESS  [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]        ║
                     ║       ●  UDP    [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]    ●  TCP     [\x1b[38;2;134;20;246mLayer4\x1b[38;5;160m]        ║
@@ -236,11 +236,38 @@ def vip():
                \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
                     ════╦════════════════════════════════════════════════╦════
                         ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
-                        ║      \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHOD\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
+                        ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
                     ║    ●  BOW        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  FLOOD      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
                     ║    ●  HTTP-LOAD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  TLS-FLOOD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
                     ║    ●  ENC        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  UAM-CFL    [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
+                    ╚════════════════════════════════════════════════════════╝
+\033[0m""")
+
+def hell():
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
+               ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
+               ║          \x1b[38;5;160m        ;:::::;       ;         OOOOOOOO                ║
+               ║          \x1b[38;5;160m       ,;::::::;     ;'         / OOOOOOO               ║
+               ║          \x1b[38;5;160m     ;::::::::██╗   ██╗██╗██████╗ / DOOOOOO             ║
+               ║          \x1b[38;5;160m   .';::::::::██║   ██║██║██╔══██╗     DOOOO            ║
+               ║          \x1b[38;5;160m  ,::::::;::::██║   ██║██║██████╔╝       DOOO           ║
+               ║          \x1b[38;5;160m ;`::::::`':::╚██╗ ██╔╝██║██╔═══╝         DOOO          ║
+               ║          \x1b[38;5;160m :`:::::::`;:::╚████╔╝:██║██║ /            DOOO         ║
+               ║          \x1b[38;5;160m ::`:::::::`;:::╚═══╝ ;╚═╝╚═╝/              DOO         ║
+               ║          \x1b[38;5;160m `:`:::::::`;:::::: ;::::::#/               DOO         ║
+               ║          \x1b[38;5;160m  :::`:::::::`;; ;:::::::::##                OO         ║
+               ║          \x1b[38;5;160m  ::::`:::::::`;::::::::;:::#                OO         ║
+               \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
+                    ════╦════════════════════════════════════════════════╦════
+                        ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
+                        ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
+                    ╔═══╩════════════════════════════════════════════════╩═══╗
+                    ║    ●  PRIDE      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  SLOTH      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
+                    ║    ●  GLUTTONY   [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  Wrath      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
+                    ║    ●  ENVY       [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  GREED      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
+                    ║    ●  LUST       [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]                              ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -330,6 +357,8 @@ def main():
                         layer7()
                 if sinput == "vip" or sinput == "VIP" or sinput == "V1P" or sinput == "v1p":
                         vip()
+                if sinput == "hell" or sinput == "HELL":
+                        hell()
                 if sinput == "tool" or sinput == "TOOL" or sinput == "TOOLS" or sinput == "tools":
                         tools()
                 if sinput == "layer4" or sinput == "LAYER4" or sinput == "l4" or sinput == "L4":
@@ -563,7 +592,7 @@ def main():
                 else:
                         try:
                                 cmd=sin.split()[0]
-                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p", "scrape", "checkproxy", "update", "UPDATE", "check"]
+                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p", "scrape", "checkproxy", "update", "UPDATE", "check", "hell", "HELL"]
                                 
                                 if cmd not in excluded_keywords:
                                   print(" \x1b[38;5;160m[ ! ] Command : [ \x1b[38;5;255m"+cmd+" \x1b[38;5;160m] Not Found\n [ > ] Use '\x1b[38;5;255mhelp\x1b[38;5;160m' to see all commands.")
