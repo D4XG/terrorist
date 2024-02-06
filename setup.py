@@ -48,6 +48,8 @@ def install_python_packages():
         # Install additional Python packages
         subprocess.check_call(['pip', 'install', 'termcolor'])
 
+        subprocess.check_call(['pip', 'install', 'colored'])
+
         subprocess.check_call(['pip', 'install', 'colorama'])
 
         subprocess.check_call(['pip', 'install', 'datetime'])
