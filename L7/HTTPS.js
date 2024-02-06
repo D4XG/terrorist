@@ -10,7 +10,7 @@ const fs = require("fs");
 const { HeaderGenerator } = require('header-generator');
 const axios = require('axios');
 const https = require('https');
-const keep_alive = require('keepalive.js')
+const keep_alive = require('./keep_alive.js')
 
 process.setMaxListeners(0);
 require("events").EventEmitter.defaultMaxListeners = 0;
