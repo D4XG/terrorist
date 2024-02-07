@@ -48,8 +48,6 @@ def install_python_packages():
         # Install additional Python packages
         subprocess.check_call(['pip', 'install', 'termcolor'])
 
-        subprocess.check_call(['pip', 'install', 'colored'])
-
         subprocess.check_call(['pip', 'install', 'colorama'])
 
         subprocess.check_call(['pip', 'install', 'datetime'])
@@ -89,7 +87,7 @@ def install_npm_packages():
         'npm i fingerprint-generator', 'npm i fingerprint-injector', 'npm i ua-parser-js', 'npm i http2',
         'npm i minimist', 'npm i socks', 'npm i puppeteer', 'npm i hcaptcha-solver', 'npm i puppeteer-extra',
         'npm i puppeteer-extra-plugin-recaptcha', 'npm i puppeteer-extra-plugin-stealth', 'npm i http', 'npm i http2',
-        'npm i zombie', 'npm i random-referer', 'npm i jar'
+        'npm i zombie', 'npm i random-referer', 'npm i jar', 'npm i xmlhttprequest', 'npm i vm'
     ]
     
     try:
