@@ -134,7 +134,7 @@ if __name__ == "__main__":
     try:
         time.sleep(1.5)
         clear()
-        typing_effect("TERRORIST | Enter proxy file to check: ")
+        typing_effect("TERRORIST | Enter proxy file to check, normal: needtocheck.txt")
         filename = input("\x1b[38;5;160m> \x1b[38;5;255m")
         num_threads = 22222
         os.system("cls" if os.name == "nt" else "clear")
