@@ -2,12 +2,12 @@ import socket
 import time
 import sys
 
-def tcp_ping(target_ip, target_port, interval=0.5): 
+def tcp_ping(target_ip, target_port, interval=0.5, timeout=1): 
     while True:
         try:
             start_time = time.time()
             client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            client_socket.settimeout(5)
+            client_socket.settimeout(timeout)
             client_socket.connect((target_ip, target_port))
             client_socket.close()
             end_time = time.time()
@@ -25,5 +25,7 @@ if __name__ == "__main__":
 
     target_ip = sys.argv[1]
     target_port = int(sys.argv[2])
-    interval = 0.2
-    tcp_ping(target_ip, target_port, interval)
+    interval = 0.5
+    timeout = 0.7  # Adjust this value as needed
+    tcp_ping(target_ip, target_port, interval, timeout)
+    # Paping by D4XG
