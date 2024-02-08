@@ -69,7 +69,7 @@ def update_repository():
             else:
                 print(f"\x1b[38;5;160m[ \x1b[38;5;255m* \x1b[38;5;160m] \x1b[38;5;160m| Failed to download the update. Status code: \x1b[38;5;255m{response.status_code}")
         else:
-            print("\x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] \x1b[38;5;160m| \x1b[38;5;255mTerrorist is already up-to-date.")
+            print("\x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] \x1b[38;5;160m| \x1b[38;5;255mTerrorist is already up-to-date.\n\x1b[38;5;160m[ \x1b[38;5;255mCaution \x1b[38;5;160m] You have to setup again everything after the update")
     else:
         print("\x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] \x1b[38;5;160m| \x1b[38;5;255mFailed to check for updates.")
 
