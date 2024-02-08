@@ -121,9 +121,9 @@ if (headerbuilders !== undefined){
     if (cluster.isMaster){
         for (let i = 0; i < process.argv[7]; i++){
             cluster.fork();
-            console.log(`(!) Threads ${i} Started Attacking`);
+            console.log(`\x1b[38;5;160m(\x1b[38;5;255m!\x1b[38;5;160m) Threads \x1b[38;5;255m${i}\x1b[38;5;160m Started Attacking`);
         }
-        console.log("(!) Now Attacked | Method By <3 WeAreRainBowHAT & <3 Felipe & edit by Bowlancf")
+        console.log("\x1b[38;5;160m(\x1b[38;5;255m!\x1b[38;5;160m) Now Attacked | Terrorist Panel [ \x1b[38;5;255m@xDAXG\x1b[38;5;160m ]")
     
         setTimeout(() => {
             process.exit(1);
