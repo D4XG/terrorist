@@ -48,7 +48,7 @@ Setup Error visit our [Discord](https://dsc.gg/daxg)
 
 ```shell script
 git clone https://github.com/D4XG/terrorist.git
-cd terrorist
+cd terrorist-main
 python setup.py
 python terrorist.py
 ```
