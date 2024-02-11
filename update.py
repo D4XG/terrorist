@@ -19,7 +19,7 @@ def update_local_version(new_version):
         json.dump(data, file, indent=2)
 
 def get_github_version():
-    response = requests.get('https://raw.githubusercontent.com/D4XG/terrorist/main/Tsetting/version.json')
+    response = requests.get('https://raw.githubusercontent.com/D4XG/terrorist/main/version.json')
 
     if response.status_code == 200:
         return response.json().get('version')
