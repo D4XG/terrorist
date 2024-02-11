@@ -96,12 +96,6 @@ def install_npm_packages():
         for command in npm_commands:
             subprocess.run(command, shell=True, check=True)
             print(f"NPM package '{command}' installed successfully in L7 folder!")
-        
-        # Change directory to VIP
-        os.chdir('../VIP')
-        for command in npm_commands:
-            subprocess.run(command, shell=True, check=True)
-            print(f"NPM package '{command}' installed successfully in VIP folder!")
 
         # Change directory back to the main directory
         os.chdir('..')
