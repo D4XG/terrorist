@@ -35,7 +35,6 @@ let headerbuilders;
 let COOKIES = undefined;
 let POSTDATA = undefined;
 if (process.argv.length < 8){
-    console.log('		HTTP/2 (Support HTTPS Only) | <3 WeAreRainBowHAT | Edit by Bowlancf ');
     console.log('node ' + file + ' <MODE> <host> <proxies> <duration> <rate> <threads> (options cookie="" postdata="" randomstring="" headerdata="")');
     //console.log(process.argv.length);
     process.exit(0);

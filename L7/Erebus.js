@@ -14,7 +14,7 @@ const net = require("net");
  process.on('uncaughtException', function (exception) {
   });
 
- if (process.argv.length < 7){console.log(gradient.vice(`[!] node 404.js <HOST> <TIME> <RPS> <THREADS> <PROXY>.`));}
+ if (process.argv.length < 7){console.log(gradient.vice(`[!] node Erebos.js <HOST> <TIME> <RPS> <THREADS> <PROXY>.`));}
  const headers = {};
   function readLines(filePath) {
      return fs.readFileSync(filePath, "utf-8").toString().split(/\r?\n/);

