@@ -58,8 +58,9 @@ Account: DAXG
 Password: dsc.gg/daxg
 ```
 Setup process may took up to 5 minutes depend on your Network
+
 BE PATIENT
 
-# ⚡ Update
+# ⚡ Update [maintain]
 
 Use '**update**' in panel to update to the lastest version!
